@@ -1,0 +1,38 @@
+//
+//  ChatMessageToMeTVCell.swift
+//  Perqara - Clients
+//
+//  Created by antonius krisna sahadewa on 08/03/23.
+//
+
+import UIKit
+
+class ChatMessageToMeTVCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var lblValueCopyChatMessageToMe: UILabel!
+    @IBOutlet weak var containerChatMessageToMe: UIView!
+    @IBOutlet weak var lblValueChatMessageToMe: UILabel!
+    @IBOutlet weak var lblTimeChatMessageToMe: UILabel!
+
+    static let identifier = "ChatMessageToMeTVCelllIdentifier"
+    static let nibName = "ChatMessageToMeTVCell"
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+    func setupView(payload : MessageResp){
+        containerChatMessageToMe.roundCorners(value: 30)
+        lblValueChatMessageToMe.text = payload.message
+        lblValueCopyChatMessageToMe.text = payload.message
+        lblTimeChatMessageToMe.text = payload.created_at
+    }
+}
