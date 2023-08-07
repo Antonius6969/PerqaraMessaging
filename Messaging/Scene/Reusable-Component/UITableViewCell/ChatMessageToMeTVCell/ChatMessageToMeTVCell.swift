@@ -29,10 +29,10 @@ class ChatMessageToMeTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupView(payload : MessageResp){
+    func setupView(payload : MessagingReceiveListener){
         containerChatMessageToMe.roundCorners(value: 30)
         lblValueChatMessageToMe.text = payload.message
         lblValueCopyChatMessageToMe.text = payload.message
-        lblTimeChatMessageToMe.text = payload.created_at
+        lblTimeChatMessageToMe.text = payload.sent_at
     }
 }

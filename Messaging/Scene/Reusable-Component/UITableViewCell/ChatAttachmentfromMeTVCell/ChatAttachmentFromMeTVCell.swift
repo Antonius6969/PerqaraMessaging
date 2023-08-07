@@ -1,5 +1,5 @@
 //
-//  ChatAttachmentToMeTVCell.swift
+//  ChatAttachmentFromMeTVCell.swift
 //  Perqara - Clients
 //
 //  Created by antonius krisna sahadewa on 08/03/23.
@@ -7,17 +7,17 @@
 
 import UIKit
 
-class ChatAttachmentToMeTVCell: UITableViewCell {
+class ChatAttachmentFromMeTVCell: UITableViewCell {
   
   
-  @IBOutlet weak var imgChatAttachmentToMeMsg: UIImageView!
+  @IBOutlet weak var imgChatAttachmentFromMeMsg: UIImageView!
   @IBOutlet weak var lblValueCopyChatMessageToMe: UILabel!
   @IBOutlet weak var containerChatMessageToMe: UIView!
   @IBOutlet weak var lblValueChatMessageToMe: UILabel!
   @IBOutlet weak var lblTimeChatMessageToMe: UILabel!
   
-  static let identifier = "ChatMessageToMeTVCelllIdentifier"
-  static let nibName = "ChatMessageToMeTVCell"
+  static let identifier = "ChatAttachmentFromMeTVCellIdentifier"
+  static let nibName = "ChatAttachmentFromMeTVCell"
   
   override func awakeFromNib() {
     super.awakeFromNib()

@@ -811,10 +811,10 @@
     </scenes>
     <resources>
         <image name="WaitingRoom.gif" width="396" height="396"/>
-        <image name="ic_attachment_chat" width="19.5" height="18.5"/>
-        <image name="ic_back_chat" width="18.5" height="15"/>
+        <image name="ic_attachment_chat" width="19.333333969116211" height="18.666666030883789"/>
+        <image name="ic_back_chat" width="18.333333969116211" height="15.333333015441895"/>
         <image name="ic_offline" width="8" height="8"/>
-        <image name="ic_send_chat" width="40.5" height="40"/>
+        <image name="ic_send_chat" width="40.333332061767578" height="40"/>
         <image name="ic_time_chat" width="8" height="10"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

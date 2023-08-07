@@ -33,9 +33,9 @@ class ChatMessageFromMeTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupView(payload : MessageResp){
+    func setupView(payload : MessagingReceiveListener){
         lblValueMessageTVCell.text = payload.message
-        lblTimeMessageTVCell.text = payload.created_at
+        lblTimeMessageTVCell.text = payload.sent_at
         viewChatBackgroud.roundCorners(value: 30
         )
     }
