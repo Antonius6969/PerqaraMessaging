@@ -38,11 +38,11 @@ class SocketConsultHelper {
   var delegateClientConsult : SocketHelperConsultClientProtocol?
   var delegateLawyerConsult : SocketHelperConsultLawyerProtocol?
   var token : String = ""
-  var clientId : Int = 0
+  var clientId : String = ""
   var socket: SocketIOClient!
   var roomKey: String = ""
   var consultId: String = ""
-  var lawyerId: Int = 0
+  var lawyerId: String = ""
   var isLawyer: Bool = false
   
   private init() {
@@ -54,8 +54,8 @@ class SocketConsultHelper {
   
   func createSocketManager(roomKey:String,
                            consultId:String,
-                           clientId:Int,
-                           lawyerId:Int) -> SocketManager {
+                           clientId:String,
+                           lawyerId:String) -> SocketManager {
     let manager = SocketManager(
       socketURL: URL(string: "\(socketMsgBaseUrl)")!,
       config: [
@@ -65,8 +65,8 @@ class SocketConsultHelper {
         //.connectParams(["token": "Bearer \(token)"]),
         //query
         .connectParams([
-          "room_key": "roomKeyTestChatConsult1",
-          "consultation_id": "123",
+          "room_key": "abcdefg",
+          "consultation_id": "1",
           "client_id": "1",
           "lawyer_id": "2"
         ]),

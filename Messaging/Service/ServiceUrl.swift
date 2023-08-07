@@ -24,10 +24,27 @@ struct BuildModeEndpoint {
     static let buildMode : BuildMode = .dev
 }
 
+enum BaseSocketUrl: String {
+    case dev = "https://chronos-dev.perqara.com"
+    case staging = "https://chronos-staging.perqara.com"
+    case prod = "https://chronos.perqara.com"
+}
+
 enum BaseMsgSocketUrl: String {
-    case dev = "https://chronos-dev.perqara.com/Consultation"
-    case staging = "https://chronos-staging.perqara.com/Consultation"
-    case prod = "https://chronos.perqara.com/Consultation"
+    case dev = "https://chronos-dev.perqara.com/consultation"
+    case staging = "https://chronos-staging.perqara.com/consultation"
+    case prod = "https://chronos.perqara.com/consultation"
+}
+
+var socketBaseUrl: String {
+    switch BuildModeEndpoint.buildMode {
+        case .dev:
+            return "\(BaseSocketUrl.dev.rawValue)/"
+        case .staging:
+            return "\(BaseSocketUrl.staging.rawValue)/"
+        case .prod :
+            return "\(BaseSocketUrl.prod.rawValue)/"
+    }
 }
 
 var socketMsgBaseUrl: String {

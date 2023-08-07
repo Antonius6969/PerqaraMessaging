@@ -23,7 +23,6 @@ class AttachConfrimView: UIView {
   @IBOutlet weak var tfDescAttach: UITextField!
   @IBOutlet weak var btnSendAttach: UIButtonView!
   
-  
   struct ViewProperty{
     static let nibName = "AttachConfrimView"
     static let identifierVC = "AttachConfrimViewIdentifier"

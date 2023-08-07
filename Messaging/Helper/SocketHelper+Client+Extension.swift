@@ -13,7 +13,7 @@ extension SocketHelper {
   
   func socketClientRegister(token : String, clientId : String) {
     socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("CLIENT:REGISTER", ["token": token, "client_id": self.clientId ?? ""])
+      self.socket.emit("CLIENT:REGISTER", ["token": token, "client_id": clientId ?? ""])
       self.socket.on("CLIENT:REGISTER") { data, ack in
         print("ini data \(data)")
       }

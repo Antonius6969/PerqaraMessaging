@@ -12,7 +12,7 @@ import UIKit
 class UIButtonView: UIView {
     
     @IBOutlet weak var coreButton: UIButton!
-    @IBOutlet weak var coreMessageError: UILabelInterMedium!
+    @IBOutlet weak var coreMessageError: UILabel!
     
     var contentView:UIView?
     @IBInspectable var nibName:String? = "UIButtonView"
@@ -34,25 +34,25 @@ class UIButtonView: UIView {
         var backgroundColor: UIColor {
             switch self {
             case .filled:
-                return UIColor(string: "#0376bf")
+              return UIColor.blue
             case .filledRed:
-                return UIColor(string: "#FDEEEC")
+              return UIColor.red
             case .filledGreen:
-                return UIColor(string: "#EAFAF0")
+              return UIColor.green
             case .filledYoungBlue:
-                return UIColor(string: "#EDF2F7")
+              return UIColor.systemBlue
             case .filledYellow:
-                return UIColor(string: "#FFF8D4")
+              return UIColor.yellow
             case .filledWhite:
                 return UIColor.white
             case .nude:
                 return UIColor.clear
             case .nudeWhite:
-                return UIColor(string: "#ffffff")
+              return UIColor.white
             case .nudeNoBorder :
-                return UIColor(string: "#ffffff")
+              return UIColor.white
             case .disabled:
-                return UIColor(string: "#e5e5e5")
+              return UIColor.gray
             case .clear:
                 return UIColor.clear
             case .hightlight:
@@ -63,58 +63,58 @@ class UIButtonView: UIView {
         var titleColor: UIColor {
             switch self {
             case .filled:
-                return UIColor(string: "#ffffff")
+              return UIColor.blue
             case .filledRed:
-                return UIColor(string: "#752C21")
+              return UIColor.red
             case .filledGreen:
-                return UIColor(string: "#156633")
+              return UIColor.green
             case .filledYoungBlue:
-                return UIColor(string: "#0A50A3")
+              return UIColor.systemBlue
             case .filledYellow:
-                return UIColor(string: "#784D05")
+              return UIColor.yellow
             case .filledWhite:
-                return UIColor(string: "#0376bf")
+                return UIColor.white
             case .nude:
-                return  UIColor(string: "#0376bf")
+                return UIColor.clear
             case .nudeWhite:
-                return UIColor(string: "#0376bf")
-            case .nudeNoBorder:
-                return  UIColor(string: "#0376bf")
+              return UIColor.white
+            case .nudeNoBorder :
+              return UIColor.white
             case .disabled:
-                return UIColor(string: "#ffffff")
+              return UIColor.gray
             case .clear:
-                return UIColor(string: "#0376bf")
+                return UIColor.clear
             case .hightlight:
-                return UIColor(string: "#ffffff")
+                return UIColor.clear
             }
         }
         
         var borderColor: UIColor {
             switch self {
             case .filled:
-                return UIColor(string: "#0376bf")
+              return UIColor.blue
             case .filledRed:
-                return UIColor(string: "#FDEEEC")
+              return UIColor.red
             case .filledGreen:
-                return UIColor(string: "#EAFAF0")
+              return UIColor.green
             case .filledYoungBlue:
-                return UIColor(string: "#EDF2F7")
+              return UIColor.systemBlue
             case .filledYellow:
-                return UIColor(string: "#FFF8D4")
+              return UIColor.yellow
             case .filledWhite:
                 return UIColor.white
             case .nude:
-                return UIColor(string: "#0376bf")
-            case .nudeWhite:
-                return UIColor(string: "#0376bf")
-            case .nudeNoBorder:
                 return UIColor.clear
+            case .nudeWhite:
+              return UIColor.white
+            case .nudeNoBorder :
+              return UIColor.white
             case .disabled:
-                return UIColor(string: "#e5e5e5")
+              return UIColor.gray
             case .clear:
                 return UIColor.clear
             case .hightlight:
-                return UIColor(string: "#ffffff")
+                return UIColor.clear
             }
         }
         

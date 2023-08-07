@@ -41,6 +41,7 @@
 		82857A292A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A272A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.swift */; };
 		82857A2A2A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82857A282A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib */; };
 		82857A2C2A80CA35003A3D5A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */; };
+		828F31AC2A80ED610025F2FA /* MessagingDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31AB2A80ED610025F2FA /* MessagingDataRouter.swift */; };
 		82A2943A2A1B5D010064CEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A294392A1B5D010064CEF4 /* AppDelegate.swift */; };
 		82A2943C2A1B5D010064CEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2943B2A1B5D010064CEF4 /* SceneDelegate.swift */; };
 		82A2943E2A1B5D010064CEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2943D2A1B5D010064CEF4 /* ViewController.swift */; };
@@ -84,6 +85,7 @@
 		82857A272A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAttachmentFromMeTVCell.swift; sourceTree = "<group>"; };
 		82857A282A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatAttachmentFromMeTVCell.xib; sourceTree = "<group>"; };
 		82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		828F31AB2A80ED610025F2FA /* MessagingDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingDataRouter.swift; sourceTree = "<group>"; };
 		82A294362A1B5D010064CEF4 /* TesterAbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesterAbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A294392A1B5D010064CEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A2943B2A1B5D010064CEF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		828579D22A7B9CC1003A3D5A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				828F31A92A80ED370025F2FA /* Model */,
 				828579E92A7C064C003A3D5A /* MessagingRouter.swift */,
 			);
 			path = Router;
@@ -314,6 +317,14 @@
 			path = ChatAttachmentfromMeTVCell;
 			sourceTree = "<group>";
 		};
+		828F31A92A80ED370025F2FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				828F31AB2A80ED610025F2FA /* MessagingDataRouter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		82A2942D2A1B5D010064CEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +408,7 @@
 			packageReferences = (
 				82A294512A1B5EA30064CEF4 /* XCRemoteSwiftPackageReference "ably-cocoa" */,
 				82857A0F2A7C9F22003A3D5A /* XCRemoteSwiftPackageReference "socket" */,
+				828F31A82A80EAC90025F2FA /* XCRemoteSwiftPackageReference "TTSegmentedControl" */,
 			);
 			productRefGroup = 82A294372A1B5D010064CEF4 /* Products */;
 			projectDirPath = "";
@@ -435,6 +447,7 @@
 			files = (
 				82857A252A80C07A003A3D5A /* ChatAttachmentToMeTVCell.swift in Sources */,
 				828579CB2A7B7323003A3D5A /* SocketHelper+Client+Extension.swift in Sources */,
+				828F31AC2A80ED610025F2FA /* MessagingDataRouter.swift in Sources */,
 				828579CD2A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift in Sources */,
 				828579CE2A7B7323003A3D5A /* SocketHelper+Lawyer+Extension.swift in Sources */,
 				82857A0E2A7C09A7003A3D5A /* AttachConfrimView.swift in Sources */,
@@ -536,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -590,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -607,6 +620,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TesterAbly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -634,6 +648,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TesterAbly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -684,6 +699,14 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+			};
+		};
+		828F31A82A80EAC90025F2FA /* XCRemoteSwiftPackageReference "TTSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tapptitude/TTSegmentedControl";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.10;
 			};
 		};
 		82A294512A1B5EA30064CEF4 /* XCRemoteSwiftPackageReference "ably-cocoa" */ = {

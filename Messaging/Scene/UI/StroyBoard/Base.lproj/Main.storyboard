@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main MessagingVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TesterAbly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainMessagingVC" customModule="TesterAbly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nbV-t0-thQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nbV-t0-thQ">
                                         <rect key="frame" x="16" y="363" width="361" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wZv-zo-gnv"/>
@@ -104,10 +104,14 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Connect"/>
+                                        <connections>
+                                            <action selector="btnActionConnectMessaging:" destination="BYZ-38-t0r" eventType="touchUpInside" id="812-KS-GUa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nbV-t0-thQ" secondAttribute="trailing" constant="16" id="9Zg-yR-qkq"/>
                                     <constraint firstAttribute="trailing" secondItem="anr-hE-5OF" secondAttribute="trailing" constant="16" id="9db-rg-xkg"/>
                                     <constraint firstItem="8O1-MN-roM" firstAttribute="top" secondItem="3Ex-ne-CgD" secondAttribute="bottom" constant="8" id="DEy-E1-E6v"/>
                                     <constraint firstItem="3Ex-ne-CgD" firstAttribute="top" secondItem="anr-hE-5OF" secondAttribute="bottom" constant="16" id="DIE-9q-MGc"/>
@@ -118,10 +122,12 @@
                                     <constraint firstAttribute="trailing" secondItem="sui-qz-ByR" secondAttribute="trailing" constant="16" id="IJS-9H-v6F"/>
                                     <constraint firstItem="anr-hE-5OF" firstAttribute="leading" secondItem="AHJ-NL-bCM" secondAttribute="leading" constant="16" id="MXM-FA-z5I"/>
                                     <constraint firstItem="sui-qz-ByR" firstAttribute="top" secondItem="R39-wJ-UBy" secondAttribute="bottom" constant="16" id="N1j-ZY-De3"/>
+                                    <constraint firstItem="nbV-t0-thQ" firstAttribute="centerX" secondItem="AHJ-NL-bCM" secondAttribute="centerX" id="WWX-GC-YA6"/>
                                     <constraint firstItem="DSu-hm-YyE" firstAttribute="leading" secondItem="AHJ-NL-bCM" secondAttribute="leading" constant="16" id="WZh-YU-VnB"/>
                                     <constraint firstItem="Jmv-ra-bU4" firstAttribute="top" secondItem="nbV-t0-thQ" secondAttribute="bottom" constant="32" id="YdS-Wy-TXZ"/>
                                     <constraint firstItem="anr-hE-5OF" firstAttribute="top" secondItem="sui-qz-ByR" secondAttribute="bottom" constant="8" id="aKT-it-uVW"/>
                                     <constraint firstItem="R39-wJ-UBy" firstAttribute="top" secondItem="DSu-hm-YyE" secondAttribute="bottom" constant="8" id="c1L-7J-lQc"/>
+                                    <constraint firstItem="nbV-t0-thQ" firstAttribute="leading" secondItem="AHJ-NL-bCM" secondAttribute="leading" constant="16" id="feT-1k-FV5"/>
                                     <constraint firstItem="nbV-t0-thQ" firstAttribute="top" secondItem="dya-bl-8vb" secondAttribute="bottom" constant="8" id="ffZ-go-9xb"/>
                                     <constraint firstItem="R39-wJ-UBy" firstAttribute="leading" secondItem="AHJ-NL-bCM" secondAttribute="leading" constant="16" id="hJA-IB-J8e"/>
                                     <constraint firstAttribute="trailing" secondItem="R39-wJ-UBy" secondAttribute="trailing" constant="16" id="hR1-VP-JH4"/>
@@ -147,15 +153,22 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AHJ-NL-bCM" secondAttribute="trailing" id="wPD-J5-GJL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SegmentControlUserType" destination="7rO-Kp-isA" id="eKn-ta-Bva"/>
+                        <outlet property="textFieldClientIdMessaging" destination="nbV-t0-thQ" id="Yft-lz-66E"/>
+                        <outlet property="textFieldConsultIdMessaging" destination="anr-hE-5OF" id="dWR-Tf-EyA"/>
+                        <outlet property="textFieldLawyerIdMessaging" destination="8O1-MN-roM" id="0Mg-uh-FdC"/>
+                        <outlet property="textFieldRoomKeyMessaging" destination="R39-wJ-UBy" id="YR6-XI-EEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122.90076335877862" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="112" y="-315"/>
         </scene>
-        <!--View Controller-->
+        <!--Client MessagingVC-->
         <scene sceneID="siL-es-sTx">
             <objects>
-                <viewController id="Ud9-eT-C6E" sceneMemberID="viewController">
+                <viewController id="Ud9-eT-C6E" customClass="ClientMessagingVC" customModule="TesterAbly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WyA-3Z-a30">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +190,7 @@
                                                             <constraint firstAttribute="width" constant="20" id="DHb-3g-6hT"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYH-fk-7RX" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYH-fk-7RX" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="26.666666666666671" width="20" height="20"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -237,7 +250,7 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-vW-VkV" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-vW-VkV" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="297" y="19" width="80" height="30"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -298,7 +311,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="asi-Vz-6Oz"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w02-al-BVZ" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w02-al-BVZ" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="282" y="10" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -313,7 +326,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="Y7U-PE-Hrv"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="na3-Fc-gZB" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="na3-Fc-gZB" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="329" y="10" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -480,10 +493,10 @@
             </objects>
             <point key="canvasLocation" x="1070.9923664122136" y="-315.49295774647891"/>
         </scene>
-        <!--View Controller-->
+        <!--Lawyer MessagingVC-->
         <scene sceneID="8yF-QG-ZVv">
             <objects>
-                <viewController id="Fgq-1x-edU" sceneMemberID="viewController">
+                <viewController id="Fgq-1x-edU" customClass="LawyerMessagingVC" customModule="TesterAbly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qgt-xR-lyc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,7 +518,7 @@
                                                             <constraint firstAttribute="height" constant="20" id="nV2-rS-SzS"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioo-Uc-VsD" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioo-Uc-VsD" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="26.666666666666671" width="20" height="20"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -565,7 +578,7 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wL7-D5-n4v" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wL7-D5-n4v" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="297" y="19" width="80" height="30"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -626,7 +639,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="YAG-5M-66x"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-ip-oOj" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-ip-oOj" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="282" y="10" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -641,7 +654,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="sFJ-nu-XNf"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERb-Vz-bWv" customClass="UIButtonView" customModule="Perqara___Clients" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERb-Vz-bWv" customClass="UIButtonView" customModule="TesterAbly" customModuleProvider="target">
                                                         <rect key="frame" x="329" y="10" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>

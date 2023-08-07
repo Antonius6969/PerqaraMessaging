@@ -35,7 +35,6 @@ class AttachmentView: UIView {
     static let stringFlagBeta = "flagBeta"
   }
   
-  var client : DataOPClient?
   var vc: UIViewController?
   var delegate : AttachmentViewProtocol?
   

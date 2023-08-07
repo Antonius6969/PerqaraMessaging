@@ -23,8 +23,6 @@ class SocketHelper {
   static let shared = SocketHelper()
   var delegateRoom : SocketHelperListenerRoomProtocol?
   var delegateHome : SocketHelperListenerHomeProtocol?
-  var token = Prefs.getToken()
-  var clientId = Prefs.getClient()?.relation?.id
   var socket: SocketIOClient!
   var manager = SocketManager(
     socketURL: URL(string: "\(socketBaseUrl)")!,
