@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8227ADCD2A8235A100BCCA81 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCC2A8235A100BCCA81 /* SocketIO */; };
+		8227ADD02A8235DF00BCCA81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCF2A8235DF00BCCA81 /* Alamofire */; };
+		8227ADD32A83426300BCCA81 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */; };
+		8227ADD52A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD42A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift */; };
+		8227ADD82A838F5100BCCA81 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD72A838F5100BCCA81 /* DateExtension.swift */; };
+		8227ADDA2A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */; };
+		8227ADDD2A83FDDB00BCCA81 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADDC2A83FDDB00BCCA81 /* SDWebImage */; };
+		8227ADDF2A83FDDB00BCCA81 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADDE2A83FDDB00BCCA81 /* SDWebImageMapKit */; };
 		828579CA2A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */; };
 		828579CB2A7B7323003A3D5A /* SocketHelper+Client+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828579C52A7B7323003A3D5A /* SocketHelper+Client+Extension.swift */; };
 		828579CC2A7B7323003A3D5A /* SocketConsultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */; };
@@ -32,7 +40,6 @@
 		82857A0A2A7C099D003A3D5A /* AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A082A7C099D003A3D5A /* AttachmentView.swift */; };
 		82857A0D2A7C09A7003A3D5A /* AttachConfrimView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82857A0B2A7C09A7003A3D5A /* AttachConfrimView.xib */; };
 		82857A0E2A7C09A7003A3D5A /* AttachConfrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A0C2A7C09A7003A3D5A /* AttachConfrimView.swift */; };
-		82857A112A7C9F22003A3D5A /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 82857A102A7C9F22003A3D5A /* SocketIO */; };
 		82857A152A7CA104003A3D5A /* UIButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82857A132A7CA104003A3D5A /* UIButtonView.xib */; };
 		82857A162A7CA104003A3D5A /* UIButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A142A7CA104003A3D5A /* UIButtonView.swift */; };
 		82857A182A7CA1C6003A3D5A /* ServiceUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A172A7CA1C6003A3D5A /* ServiceUrl.swift */; };
@@ -42,16 +49,27 @@
 		82857A2A2A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82857A282A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib */; };
 		82857A2C2A80CA35003A3D5A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */; };
 		828F31AC2A80ED610025F2FA /* MessagingDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31AB2A80ED610025F2FA /* MessagingDataRouter.swift */; };
+		828F31B02A81F4350025F2FA /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31AF2A81F4350025F2FA /* CameraPicker.swift */; };
+		828F31B32A81F4660025F2FA /* GaleryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B22A81F4660025F2FA /* GaleryPicker.swift */; };
+		828F31B62A81F4B10025F2FA /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B52A81F4B10025F2FA /* DocumentPicker.swift */; };
+		828F31B82A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B72A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift */; };
+		828F31BA2A81F8630025F2FA /* MessageSendFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B92A81F8630025F2FA /* MessageSendFile.swift */; };
+		828F31BC2A81F9A80025F2FA /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31BB2A81F9A80025F2FA /* MessagingService.swift */; };
+		828F31BE2A8218DD0025F2FA /* MessagingServiceUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31BD2A8218DD0025F2FA /* MessagingServiceUrl.swift */; };
+		828F31C22A8219B60025F2FA /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31C12A8219B60025F2FA /* RestHelper.swift */; };
 		82A2943A2A1B5D010064CEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A294392A1B5D010064CEF4 /* AppDelegate.swift */; };
 		82A2943C2A1B5D010064CEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2943B2A1B5D010064CEF4 /* SceneDelegate.swift */; };
 		82A2943E2A1B5D010064CEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2943D2A1B5D010064CEF4 /* ViewController.swift */; };
 		82A294412A1B5D010064CEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A2943F2A1B5D010064CEF4 /* Main.storyboard */; };
 		82A294432A1B5D020064CEF4 /* Messaging.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A294422A1B5D020064CEF4 /* Messaging.xcassets */; };
 		82A294462A1B5D020064CEF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A294442A1B5D020064CEF4 /* LaunchScreen.storyboard */; };
-		82A294532A1B5EA30064CEF4 /* Ably in Frameworks */ = {isa = PBXBuildFile; productRef = 82A294522A1B5EA30064CEF4 /* Ably */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		8227ADD42A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LawyerMessagingVC+ExtensionAttachment.swift"; sourceTree = "<group>"; };
+		8227ADD72A838F5100BCCA81 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionTableView.swift"; sourceTree = "<group>"; };
 		828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocketConsultHelper+Lawyer+Extension.swift"; sourceTree = "<group>"; };
 		828579C52A7B7323003A3D5A /* SocketHelper+Client+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocketHelper+Client+Extension.swift"; sourceTree = "<group>"; };
 		828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConsultHelper.swift; sourceTree = "<group>"; };
@@ -86,6 +104,14 @@
 		82857A282A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatAttachmentFromMeTVCell.xib; sourceTree = "<group>"; };
 		82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		828F31AB2A80ED610025F2FA /* MessagingDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingDataRouter.swift; sourceTree = "<group>"; };
+		828F31AF2A81F4350025F2FA /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		828F31B22A81F4660025F2FA /* GaleryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryPicker.swift; sourceTree = "<group>"; };
+		828F31B52A81F4B10025F2FA /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		828F31B72A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionAttachment.swift"; sourceTree = "<group>"; };
+		828F31B92A81F8630025F2FA /* MessageSendFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSendFile.swift; sourceTree = "<group>"; };
+		828F31BB2A81F9A80025F2FA /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
+		828F31BD2A8218DD0025F2FA /* MessagingServiceUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingServiceUrl.swift; sourceTree = "<group>"; };
+		828F31C12A8219B60025F2FA /* RestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHelper.swift; sourceTree = "<group>"; };
 		82A294362A1B5D010064CEF4 /* TesterAbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesterAbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A294392A1B5D010064CEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A2943B2A1B5D010064CEF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,23 +127,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82A294532A1B5EA30064CEF4 /* Ably in Frameworks */,
-				82857A112A7C9F22003A3D5A /* SocketIO in Frameworks */,
+				8227ADDD2A83FDDB00BCCA81 /* SDWebImage in Frameworks */,
+				8227ADCD2A8235A100BCCA81 /* SocketIO in Frameworks */,
+				8227ADDF2A83FDDB00BCCA81 /* SDWebImageMapKit in Frameworks */,
+				8227ADD02A8235DF00BCCA81 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8227ADD12A8340C500BCCA81 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		8227ADD62A838F3E00BCCA81 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				8227ADD72A838F5100BCCA81 /* DateExtension.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		828579C32A7B7217003A3D5A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */,
-				828579C72A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift */,
-				828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */,
-				828579C92A7B7323003A3D5A /* SocketHelper.swift */,
-				828579C52A7B7323003A3D5A /* SocketHelper+Client+Extension.swift */,
-				828579C82A7B7323003A3D5A /* SocketHelper+Lawyer+Extension.swift */,
+				828F31C02A82198F0025F2FA /* RestHelper */,
+				828F31BF2A82197B0025F2FA /* SocketHelper */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -127,6 +167,8 @@
 			children = (
 				828579EB2A7C0661003A3D5A /* Model */,
 				82857A172A7CA1C6003A3D5A /* ServiceUrl.swift */,
+				828F31BB2A81F9A80025F2FA /* MessagingService.swift */,
+				828F31BD2A8218DD0025F2FA /* MessagingServiceUrl.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -155,6 +197,8 @@
 		828579D62A7B9D5D003A3D5A /* Reusable-Component */ = {
 			isa = PBXGroup;
 			children = (
+				8227ADD62A838F3E00BCCA81 /* Date */,
+				8227ADD12A8340C500BCCA81 /* UIViewController */,
 				828579F52A7C0811003A3D5A /* UIView */,
 				828579F42A7C0804003A3D5A /* UITableViewCell */,
 			);
@@ -174,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				828579E12A7C05FC003A3D5A /* LawyerMessagingVC.swift */,
+				8227ADD42A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift */,
 				828579E32A7C0605003A3D5A /* LawyerMessagingVM.swift */,
 			);
 			path = LawyerMessaging;
@@ -183,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				828579DD2A7C05E5003A3D5A /* ClientMessagingVC.swift */,
+				8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */,
+				828F31B72A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift */,
 				828579DF2A7C05EF003A3D5A /* ClientMessagingVM.swift */,
 			);
 			path = ClientMessaging;
@@ -218,6 +265,7 @@
 			children = (
 				828579EC2A7C06A4003A3D5A /* MessagingSend.swift */,
 				828579EE2A7C06B9003A3D5A /* MessagingReceive.swift */,
+				828F31B92A81F8630025F2FA /* MessageSendFile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,10 +373,65 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		828F31AD2A81F37C0025F2FA /* Libary */ = {
+			isa = PBXGroup;
+			children = (
+				828F31B42A81F48D0025F2FA /* DocumentPicker */,
+				828F31B12A81F45C0025F2FA /* GaleryPicker */,
+				828F31AE2A81F4250025F2FA /* CameraPicker */,
+			);
+			path = Libary;
+			sourceTree = "<group>";
+		};
+		828F31AE2A81F4250025F2FA /* CameraPicker */ = {
+			isa = PBXGroup;
+			children = (
+				828F31AF2A81F4350025F2FA /* CameraPicker.swift */,
+			);
+			path = CameraPicker;
+			sourceTree = "<group>";
+		};
+		828F31B12A81F45C0025F2FA /* GaleryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				828F31B22A81F4660025F2FA /* GaleryPicker.swift */,
+			);
+			path = GaleryPicker;
+			sourceTree = "<group>";
+		};
+		828F31B42A81F48D0025F2FA /* DocumentPicker */ = {
+			isa = PBXGroup;
+			children = (
+				828F31B52A81F4B10025F2FA /* DocumentPicker.swift */,
+			);
+			path = DocumentPicker;
+			sourceTree = "<group>";
+		};
+		828F31BF2A82197B0025F2FA /* SocketHelper */ = {
+			isa = PBXGroup;
+			children = (
+				828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */,
+				828579C72A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift */,
+				828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */,
+				828579C92A7B7323003A3D5A /* SocketHelper.swift */,
+				828579C52A7B7323003A3D5A /* SocketHelper+Client+Extension.swift */,
+				828579C82A7B7323003A3D5A /* SocketHelper+Lawyer+Extension.swift */,
+			);
+			path = SocketHelper;
+			sourceTree = "<group>";
+		};
+		828F31C02A82198F0025F2FA /* RestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				828F31C12A8219B60025F2FA /* RestHelper.swift */,
+			);
+			path = RestHelper;
+			sourceTree = "<group>";
+		};
 		82A2942D2A1B5D010064CEF4 = {
 			isa = PBXGroup;
 			children = (
-				82A294382A1B5D010064CEF4 /* Messaging */,
+				82A294382A1B5D010064CEF4 /* TesterAbly */,
 				82A294372A1B5D010064CEF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -341,10 +444,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		82A294382A1B5D010064CEF4 /* Messaging */ = {
+		82A294382A1B5D010064CEF4 /* TesterAbly */ = {
 			isa = PBXGroup;
 			children = (
 				82A294422A1B5D020064CEF4 /* Messaging.xcassets */,
+				828F31AD2A81F37C0025F2FA /* Libary */,
 				828579D22A7B9CC1003A3D5A /* Router */,
 				828579C32A7B7217003A3D5A /* Helper */,
 				828579D02A7B9C26003A3D5A /* Service */,
@@ -354,7 +458,7 @@
 				82A2943D2A1B5D010064CEF4 /* ViewController.swift */,
 				82A294472A1B5D020064CEF4 /* Info.plist */,
 			);
-			path = Messaging;
+			path = TesterAbly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,8 +478,10 @@
 			);
 			name = TesterAbly;
 			packageProductDependencies = (
-				82A294522A1B5EA30064CEF4 /* Ably */,
-				82857A102A7C9F22003A3D5A /* SocketIO */,
+				8227ADCC2A8235A100BCCA81 /* SocketIO */,
+				8227ADCF2A8235DF00BCCA81 /* Alamofire */,
+				8227ADDC2A83FDDB00BCCA81 /* SDWebImage */,
+				8227ADDE2A83FDDB00BCCA81 /* SDWebImageMapKit */,
 			);
 			productName = TesterAbly;
 			productReference = 82A294362A1B5D010064CEF4 /* TesterAbly.app */;
@@ -406,9 +512,9 @@
 			);
 			mainGroup = 82A2942D2A1B5D010064CEF4;
 			packageReferences = (
-				82A294512A1B5EA30064CEF4 /* XCRemoteSwiftPackageReference "ably-cocoa" */,
-				82857A0F2A7C9F22003A3D5A /* XCRemoteSwiftPackageReference "socket" */,
-				828F31A82A80EAC90025F2FA /* XCRemoteSwiftPackageReference "TTSegmentedControl" */,
+				8227ADCB2A8235A100BCCA81 /* XCRemoteSwiftPackageReference "socket" */,
+				8227ADCE2A8235DF00BCCA81 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8227ADDB2A83FDDB00BCCA81 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 82A294372A1B5D010064CEF4 /* Products */;
 			projectDirPath = "";
@@ -446,33 +552,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				82857A252A80C07A003A3D5A /* ChatAttachmentToMeTVCell.swift in Sources */,
+				8227ADD82A838F5100BCCA81 /* DateExtension.swift in Sources */,
 				828579CB2A7B7323003A3D5A /* SocketHelper+Client+Extension.swift in Sources */,
+				8227ADD52A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift in Sources */,
 				828F31AC2A80ED610025F2FA /* MessagingDataRouter.swift in Sources */,
 				828579CD2A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift in Sources */,
 				828579CE2A7B7323003A3D5A /* SocketHelper+Lawyer+Extension.swift in Sources */,
 				82857A0E2A7C09A7003A3D5A /* AttachConfrimView.swift in Sources */,
+				828F31C22A8219B60025F2FA /* RestHelper.swift in Sources */,
 				828579FD2A7C0969003A3D5A /* ChatMessageToMeTVCell.swift in Sources */,
+				828F31BA2A81F8630025F2FA /* MessageSendFile.swift in Sources */,
 				828579E22A7C05FC003A3D5A /* LawyerMessagingVC.swift in Sources */,
+				828F31B32A81F4660025F2FA /* GaleryPicker.swift in Sources */,
 				82857A0A2A7C099D003A3D5A /* AttachmentView.swift in Sources */,
 				828579DE2A7C05E5003A3D5A /* ClientMessagingVC.swift in Sources */,
 				828579CA2A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift in Sources */,
+				828F31B62A81F4B10025F2FA /* DocumentPicker.swift in Sources */,
 				828579E42A7C0605003A3D5A /* LawyerMessagingVM.swift in Sources */,
 				828579E62A7C062B003A3D5A /* MainMessagingVC.swift in Sources */,
 				82857A162A7CA104003A3D5A /* UIButtonView.swift in Sources */,
+				8227ADDA2A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift in Sources */,
 				828579E02A7C05EF003A3D5A /* ClientMessagingVM.swift in Sources */,
 				828579E82A7C0637003A3D5A /* MainMessagingVM.swift in Sources */,
 				82857A182A7CA1C6003A3D5A /* ServiceUrl.swift in Sources */,
 				82A2943E2A1B5D010064CEF4 /* ViewController.swift in Sources */,
 				828579CF2A7B7323003A3D5A /* SocketHelper.swift in Sources */,
 				82857A062A7C0986003A3D5A /* PresenceChatMessageTVCell.swift in Sources */,
+				828F31BC2A81F9A80025F2FA /* MessagingService.swift in Sources */,
 				828579ED2A7C06A4003A3D5A /* MessagingSend.swift in Sources */,
+				8227ADD32A83426300BCCA81 /* UIViewController+extension.swift in Sources */,
 				82857A022A7C0978003A3D5A /* ChatMessageFromMeTVCell.swift in Sources */,
+				828F31BE2A8218DD0025F2FA /* MessagingServiceUrl.swift in Sources */,
 				828579EA2A7C064C003A3D5A /* MessagingRouter.swift in Sources */,
 				82857A2C2A80CA35003A3D5A /* UIView+Extension.swift in Sources */,
 				82857A292A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.swift in Sources */,
 				82A2943A2A1B5D010064CEF4 /* AppDelegate.swift in Sources */,
 				82A2943C2A1B5D010064CEF4 /* SceneDelegate.swift in Sources */,
+				828F31B82A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift in Sources */,
 				828579CC2A7B7323003A3D5A /* SocketConsultHelper.swift in Sources */,
+				828F31B02A81F4350025F2FA /* CameraPicker.swift in Sources */,
 				828579EF2A7C06B9003A3D5A /* MessagingReceive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +811,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		82857A0F2A7C9F22003A3D5A /* XCRemoteSwiftPackageReference "socket" */ = {
+		8227ADCB2A8235A100BCCA81 /* XCRemoteSwiftPackageReference "socket" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
 			requirement = {
@@ -701,34 +819,44 @@
 				kind = branch;
 			};
 		};
-		828F31A82A80EAC90025F2FA /* XCRemoteSwiftPackageReference "TTSegmentedControl" */ = {
+		8227ADCE2A8235DF00BCCA81 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tapptitude/TTSegmentedControl";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.10;
+				minimumVersion = 5.0.0;
 			};
 		};
-		82A294512A1B5EA30064CEF4 /* XCRemoteSwiftPackageReference "ably-cocoa" */ = {
+		8227ADDB2A83FDDB00BCCA81 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ably/ably-cocoa.git";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		82857A102A7C9F22003A3D5A /* SocketIO */ = {
+		8227ADCC2A8235A100BCCA81 /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 82857A0F2A7C9F22003A3D5A /* XCRemoteSwiftPackageReference "socket" */;
+			package = 8227ADCB2A8235A100BCCA81 /* XCRemoteSwiftPackageReference "socket" */;
 			productName = SocketIO;
 		};
-		82A294522A1B5EA30064CEF4 /* Ably */ = {
+		8227ADCF2A8235DF00BCCA81 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 82A294512A1B5EA30064CEF4 /* XCRemoteSwiftPackageReference "ably-cocoa" */;
-			productName = Ably;
+			package = 8227ADCE2A8235DF00BCCA81 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8227ADDC2A83FDDB00BCCA81 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8227ADDB2A83FDDB00BCCA81 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		8227ADDE2A83FDDB00BCCA81 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8227ADDB2A83FDDB00BCCA81 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

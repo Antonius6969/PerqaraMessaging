@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "493443EE-E0B6-42AB-B590-3F3F56117D9F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C5F0A20-2CD5-4FE0-B74C-A25E8C6D536E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Router/MessagingRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "navigateToClientMessaging(payload:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C5F0A20-2CD5-4FE0-B74C-A25E8C6D536E - c7ab78cf890c19f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "4C5F0A20-2CD5-4FE0-B74C-A25E8C6D536E - c7ab78cf890c19f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "4C5F0A20-2CD5-4FE0-B74C-A25E8C6D536E - c7ab78cf890c19f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9446BFF1-1A75-4691-B7D5-EB4C85A42CB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Router/MessagingRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "navigateToClientMessaging(payload:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9446BFF1-1A75-4691-B7D5-EB4C85A42CB6 - 67c14bcec3d591d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToLawyerMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "9446BFF1-1A75-4691-B7D5-EB4C85A42CB6 - c7ab78cf890c1aca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1456">
+               </Location>
+               <Location
+                  uuid = "9446BFF1-1A75-4691-B7D5-EB4C85A42CB6 - c7ab78cf890c1aca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6DF5C23-24B6-44DB-9DBE-F0C2F45AB1C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Scene/ClientMessaging/ClientMessagingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "setupSocket()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B6DF5C23-24B6-44DB-9DBE-F0C2F45AB1C1 - 6deab0ed1a9736d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in TesterAbly.ClientMessagingVC.setupSocket() -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Scene/ClientMessaging/ClientMessagingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "B6DF5C23-24B6-44DB-9DBE-F0C2F45AB1C1 - 6deab0ed1a9734e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in TesterAbly.ClientMessagingVC.setupSocket() -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Scene/ClientMessaging/ClientMessagingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
