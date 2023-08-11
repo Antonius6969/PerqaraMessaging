@@ -30,7 +30,6 @@ extension UIViewController {
   static let toleranceHeightOfDismissingViewIphone7More : CGFloat = 0.35
   
   static var popUpBottomDelegate : PopUpBottomProtocol?
-  static var isPresentLoading: Bool = false
   
   static var isPresentLoading: Bool = false
   static let tagContainerLoading = 100000

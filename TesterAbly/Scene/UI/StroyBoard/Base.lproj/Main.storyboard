@@ -863,6 +863,29 @@
                             <constraint firstAttribute="trailing" secondItem="3bS-o7-Ctv" secondAttribute="trailing" id="o39-IS-0bE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAttachment" destination="Xrg-ip-oOj" id="V1y-pK-sty"/>
+                        <outlet property="btnBackMainChat" destination="ioo-Uc-VsD" id="quu-mv-Ntc"/>
+                        <outlet property="btnFinishMainChat" destination="wL7-D5-n4v" id="cQp-F3-0Zl"/>
+                        <outlet property="btnSendmsg" destination="ERb-Vz-bWv" id="OE5-5o-sTp"/>
+                        <outlet property="constraintTop" destination="N2T-BS-YMp" id="gwV-o9-1Nv"/>
+                        <outlet property="containerTextInput" destination="7G1-6X-tQJ" id="ce1-0A-4hK"/>
+                        <outlet property="imgAnimationWaiting" destination="qML-jc-qJm" id="XHg-CD-qNC"/>
+                        <outlet property="ivAdvocateMainChat" destination="dc6-As-fKH" id="Yfb-do-oFb"/>
+                        <outlet property="ivAdvocateWaitingRoom" destination="Z9s-Cr-age" id="eKf-Wg-QCG"/>
+                        <outlet property="ivBackMainChat" destination="FJp-c6-fDE" id="COS-iR-d31"/>
+                        <outlet property="ivSend" destination="9zH-Pa-e2A" id="dqs-Uu-8cx"/>
+                        <outlet property="ivStatusAdvocate" destination="MXd-q2-axG" id="Kjl-Im-jcv"/>
+                        <outlet property="lblNameAdvocateWaiting" destination="Ubf-FW-8D3" id="qxP-hn-Q7g"/>
+                        <outlet property="lblTimeDownWaitingRoom" destination="l2N-uA-iYf" id="UCj-kO-7BP"/>
+                        <outlet property="messageTextField" destination="h7m-1w-bJg" id="Ey3-Rb-FKq"/>
+                        <outlet property="messagesTableView" destination="ZKX-Tw-nhg" id="JES-sE-iQd"/>
+                        <outlet property="nameAdvocateMainChat" destination="Ubf-FW-8D3" id="0nM-0P-p45"/>
+                        <outlet property="statusAdvocateMainChat" destination="0WV-rg-fDY" id="HTh-xx-hxV"/>
+                        <outlet property="timeDurationMainChat" destination="L5J-Ej-nAJ" id="mQQ-bW-HGR"/>
+                        <outlet property="viewChattingRoom" destination="i3h-sC-QYd" id="eoG-yo-s5L"/>
+                        <outlet property="viewWaitingRoom" destination="39c-6G-Ud3" id="Xii-fm-SvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vW2-cq-Raj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,70 +14,52 @@ extension SocketConsultHelper {
   func socketLawyerCallToken(consultId: String,
                              clientId: String,
                              lawyerId: String) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:CALL_TOKEN", ["consultation_id": consultId,
-                                             "client_id": clientId,
-                                             "lawyer_id": lawyerId])
-      self.socket.on("LAWYER:CALL_TOKEN") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:CALL_TOKEN", ["consultation_id": consultId,
+                                                  "client_id": clientId,
+                                                  "lawyer_id": lawyerId]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
   
   func socketLawyerCallRequest(consultId: String,
                                clientId: String,
                                lawyerId: String,
                                call_type: String) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:CALL_REQUEST", ["consultation_id": consultId,
-                                               "client_id": clientId,
-                                               "lawyer_id": lawyerId,
-                                               "call_type": consultId])
-      self.socket.on("LAWYER:CALL_REQUEST") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:CALL_REQUEST", ["consultation_id": consultId,
+                                                    "client_id": clientId,
+                                                    "lawyer_id": lawyerId,
+                                                    "call_type": consultId]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
   
   func socketLawyerCallRequest(lawyerId: String,
                                camera_muted: Bool,
                                microphone_muted:Bool) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:CALL_MUTED", ["lawyer_id": lawyerId,
-                                             "camera_muted": camera_muted,
-                                             "microphone_muted": microphone_muted])
-      self.socket.on("LAWYER:CALL_MUTED") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:CALL_MUTED", ["lawyer_id": lawyerId,
+                                                  "camera_muted": camera_muted,
+                                                  "microphone_muted": microphone_muted]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
   
   func socketLawyerCallCanceled(lawyerId: String) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:CALL_CANCELED", ["lawyer_id": lawyerId])
-      self.socket.on("LAWYER:CALL_CANCELED") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:CALL_CANCELED", ["lawyer_id": lawyerId]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
   
   func socketLawyerCallResponse(lawyerId: String,accept_call:Bool) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:CALL_RESPONSE", ["lawyer_id": lawyerId,
-                                                "accept_call":accept_call])
-      self.socket.on("LAWYER:CALL_RESPONSE") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:CALL_RESPONSE", ["lawyer_id": lawyerId,
+                                                     "accept_call":accept_call]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
   
   func socketLawyerCallFailed(lawyerId: String) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:CALL_FAILED", ["lawyer_id": lawyerId])
-      self.socket.on("LAWYER:CALL_FAILED") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:CALL_FAILED", ["lawyer_id": lawyerId]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
 }
 

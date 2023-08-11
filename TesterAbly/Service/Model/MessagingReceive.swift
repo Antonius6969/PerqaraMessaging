@@ -25,7 +25,7 @@ struct FileReceiveListener : Codable {
   var url : String?
   var file_size : String?
   var file_name : String?
-  var file_ext : String
+  var file_ext : String?
 }
 
 

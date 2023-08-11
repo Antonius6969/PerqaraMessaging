@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct MessageReceiveFile : Codable {
+    var success: Bool?
+    var message: String?
+}

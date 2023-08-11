@@ -12,12 +12,9 @@ import SocketIO
 extension SocketHelper {
   
   func socketLawyerRegister(token : String, clientId : String) {
-    socket.on(clientEvent: .connect) {_, _ in
-      self.socket.emit("LAWYER:REGISTER", ["token": token, "lawyer_id": clientId ?? ""])
-      self.socket.on("LAWYER:REGISTER") { data, ack in
-        print("ini data \(data)")
-      }
-    }
+    self.socket.emitWithAck("LAWYER:REGISTER", ["token": token, "lawyer_id": clientId ?? ""]).timingOut(after: 3, callback: { data in
+      print("ini data \(data)")
+    })
   }
 }
 

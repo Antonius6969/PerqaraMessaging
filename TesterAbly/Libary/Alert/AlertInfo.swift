@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum AlertInfo: String{
+  
+  case errorTitle = "Oops :("
+}

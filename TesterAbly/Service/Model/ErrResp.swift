@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Err : Codable {
+    var status: String
+    var message: String
+}

@@ -11,30 +11,28 @@ import CoreMedia
 
 class LawyerMessagingVC : UIViewController {
   
-  @IBOutlet weak var viewWaitingRoom: UIView!
-  @IBOutlet weak var imgAnimationWaiting: UIImageView!
-  @IBOutlet weak var ivAdvocateWaitingRoom: UIImageView!
-  @IBOutlet weak var lblNameAdvocateWaiting: UILabel!
-  @IBOutlet weak var lblTimeDownWaitingRoom: UILabel!
-  
-  @IBOutlet weak var viewChattingRoom: UIView!
-  @IBOutlet weak var ivStatusAdvocate: UIImageView!
-  @IBOutlet weak var constraintTop: NSLayoutConstraint!
   @IBOutlet weak var ivBackMainChat: UIImageView!
   @IBOutlet weak var btnBackMainChat: UIButtonView!
-  
-  @IBOutlet weak var ivAdvocateMainChat: UIImageView!
-  @IBOutlet weak var nameAdvocateMainChat: UILabel!
-  @IBOutlet weak var statusAdvocateMainChat: UILabel!
+  @IBOutlet weak var ivAdvocateWaitingRoom: UIImageView!
+  @IBOutlet weak var lblNameAdvocateWaiting: UILabel!
   @IBOutlet weak var timeDurationMainChat: UILabel!
+  @IBOutlet weak var ivStatusAdvocate: UIImageView!
+  @IBOutlet weak var statusAdvocateMainChat: UILabel!
   @IBOutlet weak var btnFinishMainChat: UIButtonView!
-  @IBOutlet weak var containerTextInput: UIView!
   @IBOutlet weak var messageTextField: UITextField!
-  @IBOutlet weak var messagesTableView: UITableView!
-  
   @IBOutlet weak var ivSend: UIImageView!
   @IBOutlet weak var btnAttachment: UIButtonView!
   @IBOutlet weak var btnSendmsg: UIButtonView!
+  @IBOutlet weak var messagesTableView: UITableView!
+  @IBOutlet weak var imgAnimationWaiting: UIImageView!
+  @IBOutlet weak var nameAdvocateMainChat: UILabel!
+  @IBOutlet weak var lblTimeDownWaitingRoom: UILabel!
+  @IBOutlet weak var viewChattingRoom: UIView!
+  @IBOutlet weak var viewWaitingRoom: UIView!
+  @IBOutlet weak var constraintTop: NSLayoutConstraint!  
+  @IBOutlet weak var containerTextInput: UIView!
+  @IBOutlet weak var ivAdvocateMainChat: UIImageView!
+  
   
   struct VCProperty {
     static let storyBoardName : String = "Main"
@@ -47,7 +45,7 @@ class LawyerMessagingVC : UIViewController {
   static let identifierVC = VCProperty.identifierVC
   
   var router : MessagingRouter?
-  var vm = LawyerMessagingVC()
+  var vm = LawyerMessagingVM()
   var roomKey : String = ""
   var consultId : String = ""
   var clientId : String = ""
@@ -60,6 +58,7 @@ class LawyerMessagingVC : UIViewController {
   
   var chatMessageToMeTVCell = ChatMessageToMeTVCell()
   var chatMessageFromMeTVCell = ChatMessageFromMeTVCell()
+  var messages : [MessagingReceiveListener] = []
   
   var isCameraPicker : Bool = true
   var cameraPicker = CameraPicker()
@@ -85,7 +84,10 @@ class LawyerMessagingVC : UIViewController {
   }
   
   func setupVM(){
-    
+    self.cameraPicker.delegate = self
+    self.galeryPicker.delegate = self
+    self.docPicker.delegate = self
+    self.vm.delegateAttachmentService = self
   }
   
   func setupRouter(){
@@ -118,6 +120,7 @@ class LawyerMessagingVC : UIViewController {
       self.navigationController?.popViewController(animated: true)
     }
     
+// MARK :: Navigate to summary or rating
 //    btnFinishMainChat.setAtomic(type: .nudeWhite, title: "Akhiri")
 //    self.btnFinishMainChat.coreButton.addTapGestureRecognizer{
 //      self.router?.navigateSummaryChatting(viewController: self, consultId: self.viewModel.consultId,roomKey: self.viewModel.roomKey)
@@ -134,27 +137,30 @@ class LawyerMessagingVC : UIViewController {
     btnSendmsg.setAtomic(type: .clear, title: "")
     self.btnSendmsg.coreButton.addTapGestureRecognizer{
       // this is place for send message
+      SocketConsultHelper.shared.socketChatSendText(data: self.vm.initMessageSendReq(message: self.messageTextField.text ?? ""))
       self.scrollToBottom(self.messagesTableView)
     }
   }
   
   func setupSocket(){
+    //SocketConsultHelper.shared.delegateLawyerConsult = self
     SocketConsultHelper.shared.roomKey = self.roomKey
     SocketConsultHelper.shared.consultId = self.consultId
     SocketConsultHelper.shared.lawyerId = self.lawyerID
     SocketConsultHelper.shared.clientId = self.clientId
-    SocketHelper.shared.connectSocket { (success) in
+    SocketConsultHelper.shared.connectSocket { (success) in
         print("socket is connect")
         
     }
+    //SocketConsultHelper.shared.socketChatConnect()
   }
 }
 
 extension LawyerMessagingVC {
   func setupChat(){
-    //ivAdvocateMainChat.sd_setImage(with: URL(string: viewModel.advocate?.photo_url ?? ""), placeholderImage: UIImage(named: "img_placeholder"))
+    ivAdvocateMainChat.sd_setImage(with: URL(string:""), placeholderImage: UIImage(named: "img_placeholder"))
     ivAdvocateMainChat.roundCorners(value: 15)
-    //nameAdvocateMainChat.text = viewModel.advocate?.name
+    nameAdvocateMainChat.text = "client"// viewModel.advocate?.name
   }
   
   func scrollToBottom(_ tableView: UITableView) {

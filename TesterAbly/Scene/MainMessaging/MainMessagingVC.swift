@@ -51,12 +51,12 @@ class MainMessagingVC : UIViewController {
   }
   
   @IBAction func btnActionConnectMessaging(_ sender: Any) {
-    self.router?.navigateToClientMessaging(payload: vm.inittMessagingDataRouter())
-//    if vm.userType == 1 {
-//      self.router?.navigateToClientMessaging(payload: vm.inittMessagingDataRouter())
-//    } else {
-//      self.router?.navigateToLawyerMessaging(payload: vm.inittMessagingDataRouter())
-//    }
+    //self.router?.navigateToClientMessaging(payload: vm.inittMessagingDataRouter())
+    if vm.userType == 1 {
+      self.router?.navigateToClientMessaging(payload: vm.inittMessagingDataRouter())
+    } else {
+      self.router?.navigateToLawyerMessaging(payload: vm.inittMessagingDataRouter())
+    }
   }
 }
 

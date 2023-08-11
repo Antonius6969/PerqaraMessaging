@@ -46,7 +46,7 @@ class SocketHelper {
     }
     
     socket.on(clientEvent: .connect) { _, _ in
-      print("⚡️", "CONNECTED")
+      print("⚡️", "CONNECTED SOCKET")
     }
     
     socket.on(clientEvent: .ping) { _, _ in

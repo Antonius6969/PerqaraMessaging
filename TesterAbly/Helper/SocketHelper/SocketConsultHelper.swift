@@ -44,12 +44,30 @@ class SocketConsultHelper {
   var consultId: String = ""
   var lawyerId: String = ""
   var isLawyer: Bool = false
+  var manager = SocketManager(
+    socketURL: URL(string: "https://chronos-dev.perqara.com")!,
+    config: [
+      .connectParams(["EIO": "4"]),
+      .connectParams([
+        //"token": "Bearer dsdasdsds",
+        "room_key": "abcdefg",
+        "consultation_id": "12",
+        "client_id": "1",
+        "lawyer_id": "2"
+      ]),
+      .forcePolling(true),
+      .compress,
+      .log(true)
+    ]
+  )
   
   private init() {
-    socket = createSocketManager(roomKey: self.roomKey,
-                                 consultId: self.consultId,
-                                 clientId: self.clientId,
-                                 lawyerId: self.lawyerId).defaultSocket
+//    socket = createSocketManager(roomKey: self.roomKey,
+//                                 consultId: self.consultId,
+//                                 clientId: self.clientId,
+//                                 lawyerId: self.lawyerId).defaultSocket
+    socket = manager.socket(forNamespace: "/consultation")
+    print("ini manager \(manager)")
   }
   
   func createSocketManager(roomKey:String,
@@ -65,8 +83,9 @@ class SocketConsultHelper {
         //.connectParams(["token": "Bearer \(token)"]),
         //query
         .connectParams([
+          //"token": "Bearer dsdasdsds",
           "room_key": "abcdefg",
-          "consultation_id": "1",
+          "consultation_id": "12",
           "client_id": "1",
           "lawyer_id": "2"
         ]),
@@ -78,14 +97,14 @@ class SocketConsultHelper {
   }
   
   func connectSocket(completion: @escaping(Bool) -> ()) {
-    disconnectSocket()
+    //disconnectSocket()
     
     socket.on(clientEvent: .disconnect) { _, _ in
       print("⚡️", "DISCONNECT")
     }
     
     socket.on(clientEvent: .connect) { _, _ in
-      print("⚡️", "CONNECTED")
+      print("⚡️", "CONNECTED SOCKET Consult")
     }
     
     socket.on(clientEvent: .ping) { _, _ in

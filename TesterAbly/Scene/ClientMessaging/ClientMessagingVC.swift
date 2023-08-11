@@ -88,7 +88,10 @@ class ClientMessagingVC : UIViewController {
   }
   
   func setupVM(){
-    
+    self.cameraPicker.delegate = self
+    self.galeryPicker.delegate = self
+    self.docPicker.delegate = self
+    self.vm.delegateAttachmentService = self
   }
   
   func setupRouter(){
@@ -121,10 +124,11 @@ class ClientMessagingVC : UIViewController {
       self.navigationController?.popViewController(animated: true)
     }
     
-//    btnFinishMainChat.setAtomic(type: .nudeWhite, title: "Akhiri")
-//    self.btnFinishMainChat.coreButton.addTapGestureRecognizer{
-//      self.router?.navigateSummaryChatting(viewController: self, consultId: self.viewModel.consultId,roomKey: self.viewModel.roomKey)
-//    }
+    // MARK :: Navigate to summary or rating
+    //    btnFinishMainChat.setAtomic(type: .nudeWhite, title: "Akhiri")
+    //    self.btnFinishMainChat.coreButton.addTapGestureRecognizer{
+    //      self.router?.navigateSummaryChatting(viewController: self, consultId: self.viewModel.consultId,roomKey: self.viewModel.roomKey)
+    //    }
     
     btnAttachment.setAtomic(type: .clear, title: "")
     self.btnAttachment.coreButton.addTapGestureRecognizer{
@@ -137,19 +141,23 @@ class ClientMessagingVC : UIViewController {
     btnSendmsg.setAtomic(type: .clear, title: "")
     self.btnSendmsg.coreButton.addTapGestureRecognizer{
       // this is place for send message
+      SocketConsultHelper.shared.socketChatSendText(data: self.vm.initMessageSendReq(message: self.messageTextField.text ?? ""))
       self.scrollToBottom(self.messagesTableView)
     }
   }
   
   func setupSocket(){
+    //SocketConsultHelper.shared.delegateClientConsult = self
     SocketConsultHelper.shared.roomKey = self.roomKey
     SocketConsultHelper.shared.consultId = self.consultId
     SocketConsultHelper.shared.lawyerId = self.lawyerID
     SocketConsultHelper.shared.clientId = self.clientId
-    SocketHelper.shared.connectSocket { (success) in
-        print("socket is connect")
-        
+    
+    SocketConsultHelper.shared.connectSocket { (success) in
+      print("socket is connect")
     }
+    SocketConsultHelper.shared.socketChatConnect()
+    //SocketConsultHelper.shared.socketChatConnect()
   }
 }
 

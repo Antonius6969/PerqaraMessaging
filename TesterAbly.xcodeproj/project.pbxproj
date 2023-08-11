@@ -10,11 +10,27 @@
 		8227ADCD2A8235A100BCCA81 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCC2A8235A100BCCA81 /* SocketIO */; };
 		8227ADD02A8235DF00BCCA81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCF2A8235DF00BCCA81 /* Alamofire */; };
 		8227ADD32A83426300BCCA81 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */; };
-		8227ADD52A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD42A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift */; };
 		8227ADD82A838F5100BCCA81 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD72A838F5100BCCA81 /* DateExtension.swift */; };
 		8227ADDA2A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */; };
 		8227ADDD2A83FDDB00BCCA81 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADDC2A83FDDB00BCCA81 /* SDWebImage */; };
 		8227ADDF2A83FDDB00BCCA81 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADDE2A83FDDB00BCCA81 /* SDWebImageMapKit */; };
+		8227ADE12A84D55400BCCA81 /* ErrResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADE02A84D55400BCCA81 /* ErrResp.swift */; };
+		8227ADE32A84DEB400BCCA81 /* LawyerMessagingVC+ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADE22A84DEB400BCCA81 /* LawyerMessagingVC+ExtensionTableView.swift */; };
+		8227ADE52A84DFD500BCCA81 /* ClientMessagingVC+ExtensionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADE42A84DFD500BCCA81 /* ClientMessagingVC+ExtensionProtocol.swift */; };
+		8227ADE92A84E24500BCCA81 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADE72A84E24500BCCA81 /* LoadingStateView.swift */; };
+		8227ADEA2A84E24500BCCA81 /* LoadingStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8227ADE82A84E24500BCCA81 /* LoadingStateView.xib */; };
+		8227ADED2A84E4E300BCCA81 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADEC2A84E4E300BCCA81 /* Lottie */; };
+		8227ADF02A84E69400BCCA81 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADEF2A84E69400BCCA81 /* Alert.swift */; };
+		8227ADF22A84E6E500BCCA81 /* AlertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADF12A84E6E500BCCA81 /* AlertInfo.swift */; };
+		8227ADF42A84E77300BCCA81 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADF32A84E77300BCCA81 /* UIApplication+Extension.swift */; };
+		8227ADF72A84EAF200BCCA81 /* LawyerMessagingVC+ExtensionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADF62A84EAF200BCCA81 /* LawyerMessagingVC+ExtensionProtocol.swift */; };
+		8227ADF92A8507D500BCCA81 /* MessageReceiveFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADF82A8507D500BCCA81 /* MessageReceiveFile.swift */; };
+		8227ADFD2A85090100BCCA81 /* loadingLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 8227ADFC2A85090100BCCA81 /* loadingLottie.json */; };
+		8227AE002A85090B00BCCA81 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADFE2A85090B00BCCA81 /* LottieAnimationView.swift */; };
+		8227AE012A85090B00BCCA81 /* LottieAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8227ADFF2A85090B00BCCA81 /* LottieAnimationView.xib */; };
+		8227AE032A850A6500BCCA81 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227AE022A850A6500BCCA81 /* UIImageView+Extension.swift */; };
+		8227AE052A850A7B00BCCA81 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227AE042A850A7B00BCCA81 /* UIImage+Extension.swift */; };
+		8227AE072A850AD900BCCA81 /* Perqara.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8227AE062A850AD900BCCA81 /* Perqara.gif */; };
 		828579CA2A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */; };
 		828579CB2A7B7323003A3D5A /* SocketHelper+Client+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828579C52A7B7323003A3D5A /* SocketHelper+Client+Extension.swift */; };
 		828579CC2A7B7323003A3D5A /* SocketConsultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */; };
@@ -52,7 +68,6 @@
 		828F31B02A81F4350025F2FA /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31AF2A81F4350025F2FA /* CameraPicker.swift */; };
 		828F31B32A81F4660025F2FA /* GaleryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B22A81F4660025F2FA /* GaleryPicker.swift */; };
 		828F31B62A81F4B10025F2FA /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B52A81F4B10025F2FA /* DocumentPicker.swift */; };
-		828F31B82A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B72A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift */; };
 		828F31BA2A81F8630025F2FA /* MessageSendFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31B92A81F8630025F2FA /* MessageSendFile.swift */; };
 		828F31BC2A81F9A80025F2FA /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31BB2A81F9A80025F2FA /* MessagingService.swift */; };
 		828F31BE2A8218DD0025F2FA /* MessagingServiceUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F31BD2A8218DD0025F2FA /* MessagingServiceUrl.swift */; };
@@ -67,9 +82,24 @@
 
 /* Begin PBXFileReference section */
 		8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
-		8227ADD42A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LawyerMessagingVC+ExtensionAttachment.swift"; sourceTree = "<group>"; };
 		8227ADD72A838F5100BCCA81 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionTableView.swift"; sourceTree = "<group>"; };
+		8227ADE02A84D55400BCCA81 /* ErrResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrResp.swift; sourceTree = "<group>"; };
+		8227ADE22A84DEB400BCCA81 /* LawyerMessagingVC+ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LawyerMessagingVC+ExtensionTableView.swift"; sourceTree = "<group>"; };
+		8227ADE42A84DFD500BCCA81 /* ClientMessagingVC+ExtensionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionProtocol.swift"; sourceTree = "<group>"; };
+		8227ADE72A84E24500BCCA81 /* LoadingStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		8227ADE82A84E24500BCCA81 /* LoadingStateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingStateView.xib; sourceTree = "<group>"; };
+		8227ADEF2A84E69400BCCA81 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		8227ADF12A84E6E500BCCA81 /* AlertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInfo.swift; sourceTree = "<group>"; };
+		8227ADF32A84E77300BCCA81 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		8227ADF62A84EAF200BCCA81 /* LawyerMessagingVC+ExtensionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LawyerMessagingVC+ExtensionProtocol.swift"; sourceTree = "<group>"; };
+		8227ADF82A8507D500BCCA81 /* MessageReceiveFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReceiveFile.swift; sourceTree = "<group>"; };
+		8227ADFC2A85090100BCCA81 /* loadingLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingLottie.json; sourceTree = "<group>"; };
+		8227ADFE2A85090B00BCCA81 /* LottieAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		8227ADFF2A85090B00BCCA81 /* LottieAnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LottieAnimationView.xib; sourceTree = "<group>"; };
+		8227AE022A850A6500BCCA81 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		8227AE042A850A7B00BCCA81 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8227AE062A850AD900BCCA81 /* Perqara.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Perqara.gif; sourceTree = "<group>"; };
 		828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocketConsultHelper+Lawyer+Extension.swift"; sourceTree = "<group>"; };
 		828579C52A7B7323003A3D5A /* SocketHelper+Client+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocketHelper+Client+Extension.swift"; sourceTree = "<group>"; };
 		828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConsultHelper.swift; sourceTree = "<group>"; };
@@ -107,7 +137,6 @@
 		828F31AF2A81F4350025F2FA /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		828F31B22A81F4660025F2FA /* GaleryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryPicker.swift; sourceTree = "<group>"; };
 		828F31B52A81F4B10025F2FA /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
-		828F31B72A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionAttachment.swift"; sourceTree = "<group>"; };
 		828F31B92A81F8630025F2FA /* MessageSendFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSendFile.swift; sourceTree = "<group>"; };
 		828F31BB2A81F9A80025F2FA /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
 		828F31BD2A8218DD0025F2FA /* MessagingServiceUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingServiceUrl.swift; sourceTree = "<group>"; };
@@ -127,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8227ADED2A84E4E300BCCA81 /* Lottie in Frameworks */,
 				8227ADDD2A83FDDB00BCCA81 /* SDWebImage in Frameworks */,
 				8227ADCD2A8235A100BCCA81 /* SocketIO in Frameworks */,
 				8227ADDF2A83FDDB00BCCA81 /* SDWebImageMapKit in Frameworks */,
@@ -137,20 +167,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8227ADD12A8340C500BCCA81 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */,
-			);
-			path = UIViewController;
-			sourceTree = "<group>";
-		};
 		8227ADD62A838F3E00BCCA81 /* Date */ = {
 			isa = PBXGroup;
 			children = (
 				8227ADD72A838F5100BCCA81 /* DateExtension.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		8227ADE62A84E21700BCCA81 /* LoadingStateView */ = {
+			isa = PBXGroup;
+			children = (
+				8227ADE82A84E24500BCCA81 /* LoadingStateView.xib */,
+				8227ADE72A84E24500BCCA81 /* LoadingStateView.swift */,
+			);
+			path = LoadingStateView;
+			sourceTree = "<group>";
+		};
+		8227ADEE2A84E68A00BCCA81 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				8227ADEF2A84E69400BCCA81 /* Alert.swift */,
+				8227ADF12A84E6E500BCCA81 /* AlertInfo.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		8227ADF52A84E78900BCCA81 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */,
+				8227ADF32A84E77300BCCA81 /* UIApplication+Extension.swift */,
+				8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */,
+				8227AE022A850A6500BCCA81 /* UIImageView+Extension.swift */,
+				8227AE042A850A7B00BCCA81 /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8227ADFA2A85089C00BCCA81 /* LottieView */ = {
+			isa = PBXGroup;
+			children = (
+				8227ADFE2A85090B00BCCA81 /* LottieAnimationView.swift */,
+				8227ADFF2A85090B00BCCA81 /* LottieAnimationView.xib */,
+				8227ADFB2A8508A900BCCA81 /* LottieAssets */,
+			);
+			path = LottieView;
+			sourceTree = "<group>";
+		};
+		8227ADFB2A8508A900BCCA81 /* LottieAssets */ = {
+			isa = PBXGroup;
+			children = (
+				8227ADFC2A85090100BCCA81 /* loadingLottie.json */,
+			);
+			path = LottieAssets;
 			sourceTree = "<group>";
 		};
 		828579C32A7B7217003A3D5A /* Helper */ = {
@@ -198,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				8227ADD62A838F3E00BCCA81 /* Date */,
-				8227ADD12A8340C500BCCA81 /* UIViewController */,
 				828579F52A7C0811003A3D5A /* UIView */,
 				828579F42A7C0804003A3D5A /* UITableViewCell */,
 			);
@@ -218,7 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				828579E12A7C05FC003A3D5A /* LawyerMessagingVC.swift */,
-				8227ADD42A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift */,
+				8227ADF62A84EAF200BCCA81 /* LawyerMessagingVC+ExtensionProtocol.swift */,
+				8227ADE22A84DEB400BCCA81 /* LawyerMessagingVC+ExtensionTableView.swift */,
 				828579E32A7C0605003A3D5A /* LawyerMessagingVM.swift */,
 			);
 			path = LawyerMessaging;
@@ -228,8 +298,8 @@
 			isa = PBXGroup;
 			children = (
 				828579DD2A7C05E5003A3D5A /* ClientMessagingVC.swift */,
+				8227ADE42A84DFD500BCCA81 /* ClientMessagingVC+ExtensionProtocol.swift */,
 				8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */,
-				828F31B72A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift */,
 				828579DF2A7C05EF003A3D5A /* ClientMessagingVM.swift */,
 			);
 			path = ClientMessaging;
@@ -266,6 +336,8 @@
 				828579EC2A7C06A4003A3D5A /* MessagingSend.swift */,
 				828579EE2A7C06B9003A3D5A /* MessagingReceive.swift */,
 				828F31B92A81F8630025F2FA /* MessageSendFile.swift */,
+				8227ADF82A8507D500BCCA81 /* MessageReceiveFile.swift */,
+				8227ADE02A84D55400BCCA81 /* ErrResp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,10 +357,11 @@
 		828579F52A7C0811003A3D5A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				8227ADFA2A85089C00BCCA81 /* LottieView */,
+				8227ADE62A84E21700BCCA81 /* LoadingStateView */,
 				82857A122A7CA0E6003A3D5A /* ButtonView */,
 				828579F72A7C0830003A3D5A /* AttachmentView */,
 				828579F62A7C081F003A3D5A /* AttachConfrimView */,
-				82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -376,6 +449,8 @@
 		828F31AD2A81F37C0025F2FA /* Libary */ = {
 			isa = PBXGroup;
 			children = (
+				8227ADF52A84E78900BCCA81 /* Extension */,
+				8227ADEE2A84E68A00BCCA81 /* Alert */,
 				828F31B42A81F48D0025F2FA /* DocumentPicker */,
 				828F31B12A81F45C0025F2FA /* GaleryPicker */,
 				828F31AE2A81F4250025F2FA /* CameraPicker */,
@@ -457,6 +532,7 @@
 				82A2943B2A1B5D010064CEF4 /* SceneDelegate.swift */,
 				82A2943D2A1B5D010064CEF4 /* ViewController.swift */,
 				82A294472A1B5D020064CEF4 /* Info.plist */,
+				8227AE062A850AD900BCCA81 /* Perqara.gif */,
 			);
 			path = TesterAbly;
 			sourceTree = "<group>";
@@ -482,6 +558,7 @@
 				8227ADCF2A8235DF00BCCA81 /* Alamofire */,
 				8227ADDC2A83FDDB00BCCA81 /* SDWebImage */,
 				8227ADDE2A83FDDB00BCCA81 /* SDWebImageMapKit */,
+				8227ADEC2A84E4E300BCCA81 /* Lottie */,
 			);
 			productName = TesterAbly;
 			productReference = 82A294362A1B5D010064CEF4 /* TesterAbly.app */;
@@ -515,6 +592,7 @@
 				8227ADCB2A8235A100BCCA81 /* XCRemoteSwiftPackageReference "socket" */,
 				8227ADCE2A8235DF00BCCA81 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8227ADDB2A83FDDB00BCCA81 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				8227ADEB2A84E4E300BCCA81 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 82A294372A1B5D010064CEF4 /* Products */;
 			projectDirPath = "";
@@ -536,11 +614,15 @@
 				82857A052A7C0986003A3D5A /* PresenceChatMessageTVCell.xib in Resources */,
 				82A294432A1B5D020064CEF4 /* Messaging.xcassets in Resources */,
 				82857A0D2A7C09A7003A3D5A /* AttachConfrimView.xib in Resources */,
+				8227AE012A85090B00BCCA81 /* LottieAnimationView.xib in Resources */,
 				828579FE2A7C0969003A3D5A /* ChatMessageToMeTVCell.xib in Resources */,
+				8227ADEA2A84E24500BCCA81 /* LoadingStateView.xib in Resources */,
+				8227AE072A850AD900BCCA81 /* Perqara.gif in Resources */,
 				82A294412A1B5D010064CEF4 /* Main.storyboard in Resources */,
 				82857A2A2A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.xib in Resources */,
 				82857A262A80C07A003A3D5A /* ChatAttachmentToMeTVCell.xib in Resources */,
 				82857A092A7C099D003A3D5A /* AttachmentView.xib in Resources */,
+				8227ADFD2A85090100BCCA81 /* loadingLottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,13 +636,16 @@
 				82857A252A80C07A003A3D5A /* ChatAttachmentToMeTVCell.swift in Sources */,
 				8227ADD82A838F5100BCCA81 /* DateExtension.swift in Sources */,
 				828579CB2A7B7323003A3D5A /* SocketHelper+Client+Extension.swift in Sources */,
-				8227ADD52A8389AB00BCCA81 /* LawyerMessagingVC+ExtensionAttachment.swift in Sources */,
 				828F31AC2A80ED610025F2FA /* MessagingDataRouter.swift in Sources */,
 				828579CD2A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift in Sources */,
 				828579CE2A7B7323003A3D5A /* SocketHelper+Lawyer+Extension.swift in Sources */,
 				82857A0E2A7C09A7003A3D5A /* AttachConfrimView.swift in Sources */,
 				828F31C22A8219B60025F2FA /* RestHelper.swift in Sources */,
+				8227ADE32A84DEB400BCCA81 /* LawyerMessagingVC+ExtensionTableView.swift in Sources */,
+				8227AE002A85090B00BCCA81 /* LottieAnimationView.swift in Sources */,
+				8227AE032A850A6500BCCA81 /* UIImageView+Extension.swift in Sources */,
 				828579FD2A7C0969003A3D5A /* ChatMessageToMeTVCell.swift in Sources */,
+				8227AE052A850A7B00BCCA81 /* UIImage+Extension.swift in Sources */,
 				828F31BA2A81F8630025F2FA /* MessageSendFile.swift in Sources */,
 				828579E22A7C05FC003A3D5A /* LawyerMessagingVC.swift in Sources */,
 				828F31B32A81F4660025F2FA /* GaleryPicker.swift in Sources */,
@@ -575,12 +660,18 @@
 				828579E02A7C05EF003A3D5A /* ClientMessagingVM.swift in Sources */,
 				828579E82A7C0637003A3D5A /* MainMessagingVM.swift in Sources */,
 				82857A182A7CA1C6003A3D5A /* ServiceUrl.swift in Sources */,
+				8227ADF72A84EAF200BCCA81 /* LawyerMessagingVC+ExtensionProtocol.swift in Sources */,
 				82A2943E2A1B5D010064CEF4 /* ViewController.swift in Sources */,
+				8227ADF02A84E69400BCCA81 /* Alert.swift in Sources */,
+				8227ADF92A8507D500BCCA81 /* MessageReceiveFile.swift in Sources */,
 				828579CF2A7B7323003A3D5A /* SocketHelper.swift in Sources */,
+				8227ADE92A84E24500BCCA81 /* LoadingStateView.swift in Sources */,
 				82857A062A7C0986003A3D5A /* PresenceChatMessageTVCell.swift in Sources */,
 				828F31BC2A81F9A80025F2FA /* MessagingService.swift in Sources */,
+				8227ADF22A84E6E500BCCA81 /* AlertInfo.swift in Sources */,
 				828579ED2A7C06A4003A3D5A /* MessagingSend.swift in Sources */,
 				8227ADD32A83426300BCCA81 /* UIViewController+extension.swift in Sources */,
+				8227ADF42A84E77300BCCA81 /* UIApplication+Extension.swift in Sources */,
 				82857A022A7C0978003A3D5A /* ChatMessageFromMeTVCell.swift in Sources */,
 				828F31BE2A8218DD0025F2FA /* MessagingServiceUrl.swift in Sources */,
 				828579EA2A7C064C003A3D5A /* MessagingRouter.swift in Sources */,
@@ -588,10 +679,11 @@
 				82857A292A80C7C5003A3D5A /* ChatAttachmentFromMeTVCell.swift in Sources */,
 				82A2943A2A1B5D010064CEF4 /* AppDelegate.swift in Sources */,
 				82A2943C2A1B5D010064CEF4 /* SceneDelegate.swift in Sources */,
-				828F31B82A81F5980025F2FA /* ClientMessagingVC+ExtensionAttachment.swift in Sources */,
 				828579CC2A7B7323003A3D5A /* SocketConsultHelper.swift in Sources */,
+				8227ADE52A84DFD500BCCA81 /* ClientMessagingVC+ExtensionProtocol.swift in Sources */,
 				828F31B02A81F4350025F2FA /* CameraPicker.swift in Sources */,
 				828579EF2A7C06B9003A3D5A /* MessagingReceive.swift in Sources */,
+				8227ADE12A84D55400BCCA81 /* ErrResp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +927,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		8227ADEB2A84E4E300BCCA81 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -857,6 +957,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8227ADDB2A83FDDB00BCCA81 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		8227ADEC2A84E4E300BCCA81 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8227ADEB2A84E4E300BCCA81 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

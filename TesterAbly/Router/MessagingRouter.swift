@@ -43,6 +43,6 @@ class MessagingRouter {
     vc.clientId = payload.clientId ?? ""
     vc.lawyerID = payload.lawyerId ?? ""
     
-    vc.navigationController?.pushViewController(vc, animated:true)
+    self.vc?.navigationController?.pushViewController(vc, animated:true)
   }
 }
