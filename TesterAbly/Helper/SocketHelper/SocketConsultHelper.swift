@@ -44,30 +44,14 @@ class SocketConsultHelper {
   var consultId: String = ""
   var lawyerId: String = ""
   var isLawyer: Bool = false
-  var manager = SocketManager(
-    socketURL: URL(string: "https://chronos-dev.perqara.com")!,
-    config: [
-      .connectParams(["EIO": "4"]),
-      .connectParams([
-        //"token": "Bearer dsdasdsds",
-        "room_key": "abcdefg",
-        "consultation_id": "12",
-        "client_id": "1",
-        "lawyer_id": "2"
-      ]),
-      .forcePolling(true),
-      .compress,
-      .log(true)
-    ]
-  )
+  var manager : SocketManager?
   
   private init() {
-//    socket = createSocketManager(roomKey: self.roomKey,
-//                                 consultId: self.consultId,
-//                                 clientId: self.clientId,
-//                                 lawyerId: self.lawyerId).defaultSocket
-    socket = manager.socket(forNamespace: "/consultation")
-    print("ini manager \(manager)")
+    manager = createSocketManager(roomKey: self.roomKey,
+                                                      consultId: self.consultId,
+                                                      clientId: self.clientId,
+                                                      lawyerId: self.lawyerId)
+    socket = manager?.socket(forNamespace: "/consultation")
   }
   
   func createSocketManager(roomKey:String,
@@ -75,24 +59,21 @@ class SocketConsultHelper {
                            clientId:String,
                            lawyerId:String) -> SocketManager {
     let manager = SocketManager(
-      socketURL: URL(string: "\(socketMsgBaseUrl)")!,
-      config: [
-        //Default
-        .connectParams(["EIO": "4"]),
-        //auth
-        //.connectParams(["token": "Bearer \(token)"]),
-        //query
-        .connectParams([
-          //"token": "Bearer dsdasdsds",
-          "room_key": "abcdefg",
-          "consultation_id": "12",
-          "client_id": "1",
-          "lawyer_id": "2"
-        ]),
-        .forcePolling(true),
-        .compress,
-        .log(true)
-      ])
+          socketURL: URL(string: "https://chronos-dev.perqara.com")!,
+          config: [
+            .connectParams(["EIO": "4"]),
+            .connectParams([
+              //"token": "Bearer dsdasdsds",
+              "room_key": "abcdefg",
+              "consultation_id": "12",
+              "client_id": "1",
+              "lawyer_id": "2"
+            ]),
+            .forcePolling(true),
+            .compress,
+            .log(true)
+          ]
+        )
     return manager
   }
   

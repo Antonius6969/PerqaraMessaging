@@ -244,38 +244,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "23D5DF38-BCA0-4497-B90C-0CADC823ECD1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "connectSocket(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EFD26901-2B10-466B-A733-D87EBE8AD5C7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "connectSocket(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2519321B-88DA-4A4C-BB93-1B329FF09426"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -340,49 +308,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E082484D-A5FF-4BA8-B7A0-2DFE4C207657"
-            shouldBeEnabled = "No"
+            uuid = "E9615250-A4E9-4453-84F2-9CC370A3813B"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "init()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E082484D-A5FF-4BA8-B7A0-2DFE4C207657 - d80aa91e42d75bc4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TesterAbly.SocketConsultHelper.() -&gt; TesterAbly.SocketConsultHelper.init() -&gt; TesterAbly.SocketConsultHelper"
-                  moduleName = "TesterAbly"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Helper/SocketHelper/SocketConsultHelper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "1652">
-               </Location>
-               <Location
-                  uuid = "E082484D-A5FF-4BA8-B7A0-2DFE4C207657 - d80aa91e42d75bc4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TesterAbly.SocketConsultHelper.() -&gt; TesterAbly.SocketConsultHelper.init() -&gt; TesterAbly.SocketConsultHelper"
-                  moduleName = "TesterAbly"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Helper/SocketHelper/SocketConsultHelper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "1704">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
