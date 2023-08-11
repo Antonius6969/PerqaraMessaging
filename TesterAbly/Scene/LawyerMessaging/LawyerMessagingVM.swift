@@ -36,9 +36,9 @@ class LawyerMessagingVM {
                                               user_name: "Dewa",
                                               sender: "LAWYER",
                                               message: message,
-                                              sent_at: DateFormatter.generateCurrentDate(FromTypeDate.dMMyyyHHmmss),
-                                              delivered_at: DateFormatter.generateCurrentDate(FromTypeDate.dMMyyyHHmmss),
-                                              read_at: DateFormatter.generateCurrentDate(FromTypeDate.dMMyyyHHmmss))
+                                              sent_at: "\(Date().currentTimeMillis())",
+                                              delivered_at: "\(Date().currentTimeMillis())",
+                                              read_at: "\(Date().currentTimeMillis())")
     return messagingSendEmit
   }
   

@@ -37,9 +37,9 @@ class ClientMessagingVM {
                                               user_name: "anton",
                                               sender: "ClIENT",
                                               message: message,
-                                              sent_at: DateFormatter.generateCurrentDate(FromTypeDate.dMMyyyHHmmss),
-                                              delivered_at: DateFormatter.generateCurrentDate(FromTypeDate.dMMyyyHHmmss),
-                                              read_at: DateFormatter.generateCurrentDate(FromTypeDate.dMMyyyHHmmss))
+                                              sent_at: "\(Date().currentTimeMillis())",
+                                              delivered_at: "\(Date().currentTimeMillis())",
+                                              read_at: "\(Date().currentTimeMillis())")
     return messagingSendEmit
   }
   

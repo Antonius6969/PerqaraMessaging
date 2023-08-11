@@ -10,7 +10,7 @@
 		8227ADCD2A8235A100BCCA81 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCC2A8235A100BCCA81 /* SocketIO */; };
 		8227ADD02A8235DF00BCCA81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCF2A8235DF00BCCA81 /* Alamofire */; };
 		8227ADD32A83426300BCCA81 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */; };
-		8227ADD82A838F5100BCCA81 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD72A838F5100BCCA81 /* DateExtension.swift */; };
+		8227ADD82A838F5100BCCA81 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD72A838F5100BCCA81 /* Date+Extension.swift */; };
 		8227ADDA2A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */; };
 		8227ADDD2A83FDDB00BCCA81 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADDC2A83FDDB00BCCA81 /* SDWebImage */; };
 		8227ADDF2A83FDDB00BCCA81 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADDE2A83FDDB00BCCA81 /* SDWebImageMapKit */; };
@@ -82,7 +82,7 @@
 
 /* Begin PBXFileReference section */
 		8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
-		8227ADD72A838F5100BCCA81 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		8227ADD72A838F5100BCCA81 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionTableView.swift"; sourceTree = "<group>"; };
 		8227ADE02A84D55400BCCA81 /* ErrResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrResp.swift; sourceTree = "<group>"; };
 		8227ADE22A84DEB400BCCA81 /* LawyerMessagingVC+ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LawyerMessagingVC+ExtensionTableView.swift"; sourceTree = "<group>"; };
@@ -167,14 +167,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8227ADD62A838F3E00BCCA81 /* Date */ = {
-			isa = PBXGroup;
-			children = (
-				8227ADD72A838F5100BCCA81 /* DateExtension.swift */,
-			);
-			path = Date;
-			sourceTree = "<group>";
-		};
 		8227ADE62A84E21700BCCA81 /* LoadingStateView */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +188,7 @@
 		8227ADF52A84E78900BCCA81 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8227ADD72A838F5100BCCA81 /* Date+Extension.swift */,
 				82857A2B2A80CA35003A3D5A /* UIView+Extension.swift */,
 				8227ADF32A84E77300BCCA81 /* UIApplication+Extension.swift */,
 				8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */,
@@ -267,7 +260,6 @@
 		828579D62A7B9D5D003A3D5A /* Reusable-Component */ = {
 			isa = PBXGroup;
 			children = (
-				8227ADD62A838F3E00BCCA81 /* Date */,
 				828579F52A7C0811003A3D5A /* UIView */,
 				828579F42A7C0804003A3D5A /* UITableViewCell */,
 			);
@@ -634,7 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82857A252A80C07A003A3D5A /* ChatAttachmentToMeTVCell.swift in Sources */,
-				8227ADD82A838F5100BCCA81 /* DateExtension.swift in Sources */,
+				8227ADD82A838F5100BCCA81 /* Date+Extension.swift in Sources */,
 				828579CB2A7B7323003A3D5A /* SocketHelper+Client+Extension.swift in Sources */,
 				828F31AC2A80ED610025F2FA /* MessagingDataRouter.swift in Sources */,
 				828579CD2A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift in Sources */,

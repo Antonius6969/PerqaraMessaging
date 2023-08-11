@@ -111,17 +111,19 @@ class SocketConsultHelper {
     socket.on(clientEvent: .statusChange) { _, _ in
       print("⚡️", "STATUS CHANGED")
     }
-    
-    if isLawyer {
-      socketConsultListenLawyer()
-    } else {
-      sockeConsultListenClient()
-    }
+//    socketConsultListenLawyer()
+//    sockeConsultListenClient()
+    didReceiveClientChat()
+    didReceiveClientPresence()
+    didReceiveLawyerChat()
+    didReceiveLawyerPresence()
     
     socket.connect()
   }
   
   func sockeConsultListenClient(){
+    didReceiveClientChat()
+    didReceiveClientPresence()
     didCallRequestNotif()
     didCallMutedNotif()
     didCallRespNotif()
@@ -130,6 +132,7 @@ class SocketConsultHelper {
   }
   
   func socketConsultListenLawyer(){
+    
     didLawyerCallRequestNotif()
     didLawyerCallMutedNotif()
     didLawyerCallRespNotif()

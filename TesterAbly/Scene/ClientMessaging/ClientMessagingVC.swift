@@ -142,6 +142,7 @@ class ClientMessagingVC : UIViewController {
     self.btnSendmsg.coreButton.addTapGestureRecognizer{
       // this is place for send message
       SocketConsultHelper.shared.socketChatSendText(data: self.vm.initMessageSendReq(message: self.messageTextField.text ?? ""))
+      self.messageTextField.text = ""
       self.scrollToBottom(self.messagesTableView)
     }
   }
