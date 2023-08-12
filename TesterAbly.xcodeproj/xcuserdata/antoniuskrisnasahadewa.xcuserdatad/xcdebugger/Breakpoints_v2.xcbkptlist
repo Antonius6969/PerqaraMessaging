@@ -77,8 +77,8 @@
             filePath = "TesterAbly/Router/MessagingRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "navigateToClientMessaging(payload:)"
             landmarkType = "7">
             <Locations>
@@ -140,100 +140,83 @@
             filePath = "TesterAbly/Scene/LawyerMessaging/LawyerMessagingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "setupAction()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2CAA1301-6B88-469D-AB6E-701BFF993EBC - 3fec9f654e481a2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in TesterAbly.LawyerMessagingVC.setupAction() -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Scene/LawyerMessaging/LawyerMessagingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2CAA1301-6B88-469D-AB6E-701BFF993EBC - 3fec9f654e481bb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in TesterAbly.LawyerMessagingVC.setupAction() -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Scene/LawyerMessaging/LawyerMessagingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2CAA1301-6B88-469D-AB6E-701BFF993EBC - 57356a517e0d5668"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 () -&gt; () in TesterAbly.LawyerMessagingVC.setupAction() -&gt; ()"
+                  moduleName = "TesterAbly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Scene/LawyerMessaging/LawyerMessagingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0A6C3A8B-1B11-4811-BAAE-D51A1A1F58C9"
+            uuid = "45879421-1188-4717-81A4-F08E1FFBD025"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Scene/LawyerMessaging/LawyerMessagingVC.swift"
+            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "setupSocket()"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "socketChatConnect()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "04CA4427-AA4D-4951-9E18-65C802FD6264"
+            uuid = "66D4C981-7EB1-4577-A5C3-66D5EE740CF1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Client+Extension.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "didReceiveClientChat()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4C98BC3D-6690-43F9-AA3A-AB80DB95A05F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Client+Extension.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "didReceiveClientChat()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "02DB3149-C706-495D-9655-3871B485B1F3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Lawyer+Extension.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "didReceiveLawyerChat()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "66D42A6C-A71D-4541-8776-3A08FAEDB3F4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Lawyer+Extension.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "didReceiveLawyerChat()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3473DE13-35C5-42E9-A32B-EAD3F101599B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Client+Extension.swift"
+            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -245,47 +228,95 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1D427CC7-4BDC-4472-9E6F-9CE94F68E9C6"
+            uuid = "E5B01ECB-5429-4013-A348-124F11B83983"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Lawyer+Extension.swift"
+            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "didReceiveLawyerChat()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "didReceiveChat()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "774B6FF0-A8AF-41CD-90D7-7DD2F2619A20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "didReceiveChat()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74694C28-3699-413F-BEB9-C904CA25863B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "socketChatSendText(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBCD6C69-E956-4F5D-A550-C265885ED494"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Router/MessagingRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "navigateToLawyerMessaging(payload:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1D427CC7-4BDC-4472-9E6F-9CE94F68E9C6 - 490510a0bd59f1be"
+                  uuid = "FBCD6C69-E956-4F5D-A550-C265885ED494 - 67c14bcec3d597a5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TesterAbly.SocketConsultHelper.didReceiveLawyerChat() -&gt; ()"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToLawyerMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
                   moduleName = "TesterAbly"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Helper/SocketHelper/SocketConsultHelper+Lawyer+Extension.swift"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "120">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1544">
                </Location>
                <Location
-                  uuid = "1D427CC7-4BDC-4472-9E6F-9CE94F68E9C6 - a114ea5b1d62d7cb"
+                  uuid = "FBCD6C69-E956-4F5D-A550-C265885ED494 - 67c14bcec3d597a5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Any&gt;, SocketIO.SocketAckEmitter) -&gt; () in TesterAbly.SocketConsultHelper.didReceiveLawyerChat() -&gt; ()"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToLawyerMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
                   moduleName = "TesterAbly"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Helper/SocketHelper/SocketConsultHelper+Lawyer+Extension.swift"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "76">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1352">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -293,49 +324,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52BA8873-C047-45DB-81BC-DC7F151B24B9"
+            uuid = "33F6DA6F-FF45-411D-BDAF-BF991BB108EB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Client+Extension.swift"
+            filePath = "TesterAbly/Router/MessagingRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "didReceiveClientChat()"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "navigateToClientMessaging(payload:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "52BA8873-C047-45DB-81BC-DC7F151B24B9 - fe6034dc82982722"
+                  uuid = "33F6DA6F-FF45-411D-BDAF-BF991BB108EB - c7ab78cf890c1a08"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TesterAbly.SocketConsultHelper.didReceiveClientChat() -&gt; ()"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
                   moduleName = "TesterAbly"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Helper/SocketHelper/SocketConsultHelper+Client+Extension.swift"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "120">
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1172">
                </Location>
                <Location
-                  uuid = "52BA8873-C047-45DB-81BC-DC7F151B24B9 - 61c2e9b82a950d7d"
+                  uuid = "33F6DA6F-FF45-411D-BDAF-BF991BB108EB - c7ab78cf890c1a08"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Any&gt;, SocketIO.SocketAckEmitter) -&gt; () in TesterAbly.SocketConsultHelper.didReceiveClientChat() -&gt; ()"
+                  symbolName = "TesterAbly.MessagingRouter.navigateToClientMessaging(payload: TesterAbly.MessagingDataRouter) -&gt; ()"
                   moduleName = "TesterAbly"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Helper/SocketHelper/SocketConsultHelper+Client+Extension.swift"
+                  urlString = "file:///Users/antoniuskrisnasahadewa/Documents/IOS%20Project/TesterAbly/TesterAbly/Router/MessagingRouter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "76">
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1360">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDDCA842-46B1-40FC-82B2-8CB31428DB0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesterAbly/Scene/LawyerMessaging/LawyerMessagingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "setupChat()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

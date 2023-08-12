@@ -63,25 +63,25 @@ class UIButtonView: UIView {
         var titleColor: UIColor {
             switch self {
             case .filled:
-              return UIColor.blue
+              return UIColor.white
             case .filledRed:
-              return UIColor.red
+              return UIColor.white
             case .filledGreen:
-              return UIColor.green
+              return UIColor.white
             case .filledYoungBlue:
-              return UIColor.systemBlue
+              return UIColor.white
             case .filledYellow:
-              return UIColor.yellow
+              return UIColor.white
             case .filledWhite:
-                return UIColor.white
+                return UIColor.blue
             case .nude:
-                return UIColor.clear
+                return UIColor.blue
             case .nudeWhite:
-              return UIColor.white
+              return UIColor.blue
             case .nudeNoBorder :
-              return UIColor.white
+              return UIColor.blue
             case .disabled:
-              return UIColor.gray
+              return UIColor.white
             case .clear:
                 return UIColor.clear
             case .hightlight:
@@ -106,7 +106,7 @@ class UIButtonView: UIView {
             case .nude:
                 return UIColor.clear
             case .nudeWhite:
-              return UIColor.white
+              return UIColor.blue
             case .nudeNoBorder :
               return UIColor.white
             case .disabled:

@@ -11,10 +11,10 @@ class ChatAttachmentFromMeTVCell: UITableViewCell {
   
   
   @IBOutlet weak var imgChatAttachmentFromMeMsg: UIImageView!
-  @IBOutlet weak var lblValueCopyChatMessageToMe: UILabel!
-  @IBOutlet weak var containerChatMessageToMe: UIView!
-  @IBOutlet weak var lblValueChatMessageToMe: UILabel!
-  @IBOutlet weak var lblTimeChatMessageToMe: UILabel!
+  @IBOutlet weak var lblValueCopyChatAttachMessageFromMe: UILabel!
+  @IBOutlet weak var containerChatAttachMessageFromMe: UIView!
+  @IBOutlet weak var lblValueChatAttachMessageFromMe: UILabel!
+  @IBOutlet weak var lblTimeChatAttachMessageFromMe: UILabel!
   @IBOutlet weak var viewChatAttachmentBackgroud: UIView!
   
   
@@ -33,9 +33,9 @@ class ChatAttachmentFromMeTVCell: UITableViewCell {
   }
   
   func setupView(payload : MessagingReceiveListener){
-    containerChatMessageToMe.roundCorners(value: 30)
-    lblValueChatMessageToMe.text = payload.message
-    lblValueCopyChatMessageToMe.text = payload.message
-    lblTimeChatMessageToMe.text = payload.sent_at
+    containerChatAttachMessageFromMe.roundCorners(value: 30)
+    lblValueChatAttachMessageFromMe.text = payload.message
+    lblValueCopyChatAttachMessageFromMe.text = payload.message
+    lblTimeChatAttachMessageFromMe.text = "\(payload.sent_at)"
   }
 }

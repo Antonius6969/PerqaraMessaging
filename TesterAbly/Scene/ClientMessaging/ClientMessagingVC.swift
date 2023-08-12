@@ -41,7 +41,7 @@ class ClientMessagingVC : UIViewController {
   struct VCProperty {
     static let storyBoardName : String = "Main"
     static let identifierVC : String = "ClientMessagingVCIdentifier"
-    static let constantHeightPopUp = 320
+    static let constantHeightPopUp = 375
     static let constantAttachConfrim = 700
   }
   
@@ -50,10 +50,7 @@ class ClientMessagingVC : UIViewController {
   
   var router : MessagingRouter?
   var vm = ClientMessagingVM()
-  var roomKey : String = ""
-  var consultId : String = ""
-  var clientId : String = ""
-  var lawyerID : String = ""
+  
   var timerWaiting:Timer?
   var timerRoom:Timer?
   
@@ -116,6 +113,7 @@ class ClientMessagingVC : UIViewController {
     self.viewWaitingRoom.isHidden = true
     self.viewChattingRoom.isHidden = false
     self.setupChat()
+    setUITableView()
   }
   
   func setupAction(){
@@ -124,11 +122,12 @@ class ClientMessagingVC : UIViewController {
       self.navigationController?.popViewController(animated: true)
     }
     
-    // MARK :: Navigate to summary or rating
-    //    btnFinishMainChat.setAtomic(type: .nudeWhite, title: "Akhiri")
-    //    self.btnFinishMainChat.coreButton.addTapGestureRecognizer{
-    //      self.router?.navigateSummaryChatting(viewController: self, consultId: self.viewModel.consultId,roomKey: self.viewModel.roomKey)
-    //    }
+    //MARK :: Navigate to summary or rating
+    btnFinishMainChat.setAtomic(type: .nudeWhite, title: "Akhiri")
+    self.btnFinishMainChat.coreButton.addTapGestureRecognizer{
+      self.navigationController?.popViewController(animated: true)
+      //self.router?.navigateSummaryChatting(viewController: self, consultId: self.viewModel.consultId,roomKey: self.viewModel.roomKey)
+    }
     
     btnAttachment.setAtomic(type: .clear, title: "")
     self.btnAttachment.coreButton.addTapGestureRecognizer{
@@ -148,17 +147,17 @@ class ClientMessagingVC : UIViewController {
   }
   
   func setupSocket(){
-    //SocketConsultHelper.shared.delegateClientConsult = self
-    SocketConsultHelper.shared.roomKey = self.roomKey
-    SocketConsultHelper.shared.consultId = self.consultId
-    SocketConsultHelper.shared.lawyerId = self.lawyerID
-    SocketConsultHelper.shared.clientId = self.clientId
+    SocketConsultHelper.shared.delegateChatConsult = self
+    SocketConsultHelper.shared.delegateClientConsult = self
+    SocketConsultHelper.shared.roomKey = self.vm.roomKey
+    SocketConsultHelper.shared.consultId = self.vm.consultId
+    SocketConsultHelper.shared.lawyerId = self.vm.lawyerID
+    SocketConsultHelper.shared.clientId = self.vm.clientId
     
     SocketConsultHelper.shared.connectSocket { (success) in
       print("socket is connect")
     }
     SocketConsultHelper.shared.socketChatConnect()
-    //SocketConsultHelper.shared.socketChatConnect()
   }
 }
 
@@ -166,7 +165,38 @@ extension ClientMessagingVC {
   func setupChat(){
     ivAdvocateMainChat.sd_setImage(with: URL(string:""), placeholderImage: UIImage(named: "img_placeholder"))
     ivAdvocateMainChat.roundCorners(value: 15)
-    nameAdvocateMainChat.text = "advocate"// viewModel.advocate?.name
+    nameAdvocateMainChat.text = vm.lawyerName// viewModel.advocate?.name
+  }
+  
+  func setupTableViewCell(){
+    let nibChatMessageToMe = UINib(nibName: ChatMessageToMeTVCell.nibName, bundle: nil)
+    self.messagesTableView.register(nibChatMessageToMe, forCellReuseIdentifier: ChatMessageToMeTVCell.identifier)
+    
+    let nibChatMessageFromMe = UINib(nibName: ChatMessageFromMeTVCell.nibName, bundle: nil)
+    self.messagesTableView.register(nibChatMessageFromMe, forCellReuseIdentifier: ChatMessageFromMeTVCell.identifier)
+    
+    let nibChatAttachmentToMeTVCell = UINib(nibName: ChatAttachmentToMeTVCell.nibName, bundle: nil)
+    self.messagesTableView.register(nibChatAttachmentToMeTVCell, forCellReuseIdentifier: ChatAttachmentToMeTVCell.identifier)
+    
+    let nibChatAttachmentFromMeTVCell = UINib(nibName: ChatAttachmentFromMeTVCell.nibName, bundle: nil)
+    self.messagesTableView.register(nibChatAttachmentFromMeTVCell, forCellReuseIdentifier: ChatAttachmentFromMeTVCell.identifier)
+    
+    let nibPresenceChatMessage = UINib(nibName: PresenceChatMessageTVCell.nibName, bundle: nil)
+    self.messagesTableView.register(nibPresenceChatMessage, forCellReuseIdentifier: PresenceChatMessageTVCell.identifier)
+  }
+  
+  func setUITableView(){
+    self.messagesTableView.showsVerticalScrollIndicator = true
+    self.messagesTableView.allowsSelection = false
+    self.messagesTableView.separatorStyle = .none
+    setupTableView()
+  }
+  
+  func setupTableView(){
+    self.setupTableViewCell()
+    self.messagesTableView.delegate = self
+    self.messagesTableView.dataSource = self
+    self.messagesTableView.backgroundView = UIImageView(image: UIImage(named: "img_chat_bckg"))
   }
   
   func scrollToBottom(_ tableView: UITableView) {

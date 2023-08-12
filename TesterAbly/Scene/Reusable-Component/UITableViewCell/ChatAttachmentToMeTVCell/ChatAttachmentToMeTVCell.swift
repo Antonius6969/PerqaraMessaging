@@ -11,14 +11,14 @@ class ChatAttachmentToMeTVCell: UITableViewCell {
   
   
   @IBOutlet weak var imgChatAttachmentToMeMsg: UIImageView!
-  @IBOutlet weak var lblValueCopyChatMessageToMe: UILabel!
-  @IBOutlet weak var containerChatMessageToMe: UIView!
-  @IBOutlet weak var lblValueChatMessageToMe: UILabel!
-  @IBOutlet weak var lblTimeChatMessageToMe: UILabel!
+  @IBOutlet weak var lblValueCopyChatAttachmentToMe: UILabel!
+  @IBOutlet weak var containerChatAttachmentToMe: UIView!
+  @IBOutlet weak var lblValueChatAttachmentToMe: UILabel!
+  @IBOutlet weak var lblTimeChatAttachmentToMe: UILabel!
   @IBOutlet weak var viewChatAttachmentToMeBackgroud: UIView!
   
-  static let identifier = "ChatMessageToMeTVCelllIdentifier"
-  static let nibName = "ChatMessageToMeTVCell"
+  static let identifier = "ChatAttachmentToMeTVCellIdentifier"
+  static let nibName = "ChatAttachmentToMeTVCell"
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -32,9 +32,9 @@ class ChatAttachmentToMeTVCell: UITableViewCell {
   }
   
   func setupView(payload : MessagingReceiveListener){
-    containerChatMessageToMe.roundCorners(value: 30)
-    lblValueChatMessageToMe.text = payload.message
-    lblValueCopyChatMessageToMe.text = payload.message
-    lblTimeChatMessageToMe.text = payload.sent_at
+    containerChatAttachmentToMe.roundCorners(value: 30)
+    lblValueChatAttachmentToMe.text = payload.message
+    lblValueCopyChatAttachmentToMe.text = payload.message
+    lblTimeChatAttachmentToMe.text = "\(payload.sent_at)"
   }
 }

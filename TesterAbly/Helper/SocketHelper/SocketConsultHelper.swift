@@ -8,11 +8,12 @@
 import Foundation
 import SocketIO
 
+protocol SocketHelperConsultChatProtocol : AnyObject {
+  func didReceiveChatMsg(data: NSDictionary)
+  func didReceiveChatPresence(data: NSDictionary)
+}
+
 protocol SocketHelperConsultClientProtocol : AnyObject {
-  //func didClientReceiveChatMsg(data:MessagingReceiveListener)
-  //func didClientReceiveChatPresence(data:PresenceReceiveListener)
-  func didClientReceiveChatMsg()
-  func didClientReceiveChatPresence()
   func didClientCallRequestNotif()
   func didClientCallMutedNotif()
   func didClientCallCanceledNotif()
@@ -21,10 +22,6 @@ protocol SocketHelperConsultClientProtocol : AnyObject {
 }
 
 protocol SocketHelperConsultLawyerProtocol : AnyObject {
-  //func didLawyerReceiveChatMsg(data:MessagingReceiveListener)
-  //func didLawyerReceiveChatPresence(data:PresenceReceiveListener)
-  func didLawyerReceiveChatMsg()
-  func didLawyerReceiveChatPresence()
   func didLawyerCallRequestNotif()
   func didLawyerCallMutedNotif()
   func didLawyerCallCanceledNotif()
@@ -35,6 +32,7 @@ protocol SocketHelperConsultLawyerProtocol : AnyObject {
 class SocketConsultHelper {
   
   static let shared = SocketConsultHelper()
+  var delegateChatConsult : SocketHelperConsultChatProtocol?
   var delegateClientConsult : SocketHelperConsultClientProtocol?
   var delegateLawyerConsult : SocketHelperConsultLawyerProtocol?
   var token : String = ""
@@ -59,15 +57,15 @@ class SocketConsultHelper {
                            clientId:String,
                            lawyerId:String) -> SocketManager {
     let manager = SocketManager(
-          socketURL: URL(string: "https://chronos-dev.perqara.com")!,
+          socketURL: URL(string: "\(socketBaseUrl)")!,
           config: [
             .connectParams(["EIO": "4"]),
             .connectParams([
               //"token": "Bearer dsdasdsds",
-              "room_key": "abcdefg",
-              "consultation_id": "12",
-              "client_id": "1",
-              "lawyer_id": "2"
+              "room_key": roomKey,
+              "consultation_id": consultId,
+              "client_id": clientId,
+              "lawyer_id": lawyerId
             ]),
             .forcePolling(true),
             .compress,
@@ -111,19 +109,20 @@ class SocketConsultHelper {
     socket.on(clientEvent: .statusChange) { _, _ in
       print("⚡️", "STATUS CHANGED")
     }
-//    socketConsultListenLawyer()
-//    sockeConsultListenClient()
-    didReceiveClientChat()
-    didReceiveClientPresence()
-    didReceiveLawyerChat()
-    didReceiveLawyerPresence()
+    
+    socketConsultListenChat()
+    sockeConsultListenClient()
+    socketConsultListenLawyer()
     
     socket.connect()
   }
   
+  func socketConsultListenChat(){
+    didReceiveChat()
+    didReceivePresence()
+  }
+  
   func sockeConsultListenClient(){
-    didReceiveClientChat()
-    didReceiveClientPresence()
     didCallRequestNotif()
     didCallMutedNotif()
     didCallRespNotif()
@@ -132,7 +131,6 @@ class SocketConsultHelper {
   }
   
   func socketConsultListenLawyer(){
-    
     didLawyerCallRequestNotif()
     didLawyerCallMutedNotif()
     didLawyerCallRespNotif()

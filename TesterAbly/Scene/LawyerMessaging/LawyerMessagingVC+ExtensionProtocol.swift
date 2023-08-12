@@ -9,15 +9,38 @@ import Foundation
 import UIKit
 import CoreMedia
 
-extension LawyerMessagingVC : SocketHelperConsultLawyerProtocol {
-  func didLawyerReceiveChatMsg() {
-    print("Lawyer Receive Chat Msg")
+extension LawyerMessagingVC : SocketHelperConsultChatProtocol {
+  func didReceiveChatMsg(data: NSDictionary) {
+    var jsonStringFix : String = ""
+    let dataDict = data as! NSDictionary
+    let jsonData = try! JSONSerialization.data(withJSONObject: dataDict, options: JSONSerialization.WritingOptions.prettyPrinted)
+    let jsonString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String
+    if jsonString.contains("\n  \"file\" : {\n\n  },") {
+      jsonStringFix = jsonString.replacingOccurrences(of: "\n  \"file\" : {\n\n  },", with: "")
+    } else {
+      jsonStringFix = jsonString
+    }
+    do {
+      let jsonDataFix = jsonStringFix.data(using: .utf8)!
+      let decoder = JSONDecoder()
+      let dataFix = try? decoder.decode(MessagingReceiveListener.self, from: jsonDataFix)
+      messages.append(dataFix ?? MessagingReceiveListener())
+      messagesTableView.reloadData()
+      scrollToBottom(self.messagesTableView)
+    } catch {
+      print("error convert")
+    }
+    print("CLient Receive Chat Msg")
   }
   
-  func didLawyerReceiveChatPresence() {
+  func didReceiveChatPresence(data: NSDictionary) {
     print("Lawyer Receive Chat Presence")
   }
   
+  
+}
+
+extension LawyerMessagingVC : SocketHelperConsultLawyerProtocol {
   func didLawyerCallRequestNotif() {
     print("Lawyer Receive Call req notif")
   }

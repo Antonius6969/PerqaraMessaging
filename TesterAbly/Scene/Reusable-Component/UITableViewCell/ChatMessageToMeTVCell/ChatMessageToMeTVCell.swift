@@ -33,6 +33,6 @@ class ChatMessageToMeTVCell: UITableViewCell {
         containerChatMessageToMe.roundCorners(value: 30)
         lblValueChatMessageToMe.text = payload.message
         lblValueCopyChatMessageToMe.text = payload.message
-        lblTimeChatMessageToMe.text = payload.sent_at
+        lblTimeChatMessageToMe.text = "\(payload.sent_at)"
     }
 }

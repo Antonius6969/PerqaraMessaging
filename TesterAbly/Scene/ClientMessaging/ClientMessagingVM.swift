@@ -26,15 +26,16 @@ class ClientMessagingVM {
   var nameClient : String = VMProperty.stringEmpty
   var token : String = VMProperty.stringEmpty
   var roomKey : String = VMProperty.stringEmpty
-  var consultId : Int = VMProperty.intEmpty
+  var consultId : String = VMProperty.stringEmpty
   var clientId : String = VMProperty.stringEmpty
+  var clientName : String = VMProperty.stringEmpty
   var lawyerID : String = VMProperty.stringEmpty
-  
+  var lawyerName : String = VMProperty.stringEmpty
   
   func initMessageSendReq(message:String) -> MessagingSendEmit {
     let messagingSendEmit = MessagingSendEmit(_id: "",
-                                              consultation_id: "12",
-                                              user_name: "anton",
+                                              consultation_id: self.consultId,
+                                              user_name: self.clientName,
                                               sender: "ClIENT",
                                               message: message,
                                               sent_at: "\(Date().currentTimeMillis())",

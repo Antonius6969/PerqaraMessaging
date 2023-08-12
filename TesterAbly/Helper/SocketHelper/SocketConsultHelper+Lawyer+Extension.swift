@@ -66,20 +66,6 @@ extension SocketConsultHelper {
 //MARK :: [Krisna] socket Helper extension temporary for func Listener
 extension SocketConsultHelper {
   
-  func didReceiveLawyerChat(){
-    socket.on("CHAT:RECEIVED") { data, ack in
-      print("⚡️ test socket listener : ", data.first ?? "")
-      self.delegateLawyerConsult?.didLawyerReceiveChatMsg()
-    }
-  }
-  
-  func didReceiveLawyerPresence(){
-    socket.on("CHAT:PRESENCE_LISTEN") { data, ack in
-      print("⚡️ test socket listener : ", data.first ?? "")
-      self.delegateLawyerConsult?.didLawyerReceiveChatPresence()
-    }
-  }
-  
   func didLawyerCallRequestNotif() {
     socket.on("LAWYER:CALL_REQUEST_NOTIFICATION") { data, ack in
       print("⚡️ test socket listener : ", data.first ?? "")

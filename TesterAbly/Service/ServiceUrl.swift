@@ -21,7 +21,7 @@ enum BuildModeUrl: String, Encodable{
     
 struct BuildModeEndpoint {
     //Dev
-    static let buildMode : BuildMode = .dev
+    static let buildMode : BuildMode = .prod
 }
 
 enum BaseApiUrl: String {

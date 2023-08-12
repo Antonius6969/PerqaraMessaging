@@ -14,7 +14,9 @@ class MainMessagingVC : UIViewController {
   @IBOutlet weak var textFieldRoomKeyMessaging: UITextField!
   @IBOutlet weak var textFieldConsultIdMessaging: UITextField!
   @IBOutlet weak var textFieldLawyerIdMessaging: UITextField!
+  @IBOutlet weak var textFieldLawyerNameMessaging: UITextField!
   @IBOutlet weak var textFieldClientIdMessaging: UITextField!
+  @IBOutlet weak var textFieldClientNameMessaging: UITextField!
   
   struct VCProperty {
       static let storyBoardName : String = "Main"
@@ -43,7 +45,9 @@ class MainMessagingVC : UIViewController {
     self.textFieldRoomKeyMessaging.addTarget(self, action: #selector(tfRoomKeyDidChange(textField:)), for: .editingChanged)
     self.textFieldConsultIdMessaging.addTarget(self, action: #selector(tfConsultIdDidChange(textField:)), for: .editingChanged)
     self.textFieldLawyerIdMessaging.addTarget(self, action: #selector(tfLawyerIdDidChange(textField:)), for: .editingChanged)
+    self.textFieldLawyerNameMessaging.addTarget(self, action: #selector(tfLawyerNameDidChange(textField:)), for: .editingChanged)
     self.textFieldClientIdMessaging.addTarget(self, action: #selector(tfClientIdDidChange(textField:)), for: .editingChanged)
+    self.textFieldClientNameMessaging.addTarget(self, action: #selector(tfClientNameDidChange(textField:)), for: .editingChanged)
   }
   
   func setupRouter(){
@@ -51,8 +55,7 @@ class MainMessagingVC : UIViewController {
   }
   
   @IBAction func btnActionConnectMessaging(_ sender: Any) {
-    //self.router?.navigateToClientMessaging(payload: vm.inittMessagingDataRouter())
-    if vm.userType == 1 {
+    if SegmentControlUserType.selectedSegmentIndex == 1 {
       self.router?.navigateToClientMessaging(payload: vm.inittMessagingDataRouter())
     } else {
       self.router?.navigateToLawyerMessaging(payload: vm.inittMessagingDataRouter())
@@ -73,7 +76,15 @@ extension MainMessagingVC {
     self.vm.lawyerId = textField.text ?? ""
   }
   
+  @objc func tfLawyerNameDidChange(textField: UITextField) {
+    self.vm.lawyerName = textField.text ?? ""
+  }
+  
   @objc func tfClientIdDidChange(textField: UITextField) {
     self.vm.clientId = textField.text ?? ""
+  }
+  
+  @objc func tfClientNameDidChange(textField: UITextField) {
+    self.vm.clientName = textField.text ?? ""
   }
 }

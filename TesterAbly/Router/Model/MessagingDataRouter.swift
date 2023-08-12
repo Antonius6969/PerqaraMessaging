@@ -11,5 +11,7 @@ struct MessagingDataRouter : Codable {
   var roomKey : String?
   var consultationId : String?
   var lawyerId : String?
+  var lawyerName: String?
   var clientId : String?
+  var clientName : String?
 }

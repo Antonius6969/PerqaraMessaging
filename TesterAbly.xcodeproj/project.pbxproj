@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82064D612A87651B00A8193F /* SocketConsultHelper+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82064D602A87651B00A8193F /* SocketConsultHelper+Chat.swift */; };
+		82064D632A87968200A8193F /* WaitingRoom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82064D622A87968200A8193F /* WaitingRoom.gif */; };
 		8227ADCD2A8235A100BCCA81 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCC2A8235A100BCCA81 /* SocketIO */; };
 		8227ADD02A8235DF00BCCA81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8227ADCF2A8235DF00BCCA81 /* Alamofire */; };
 		8227ADD32A83426300BCCA81 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */; };
@@ -81,6 +83,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82064D602A87651B00A8193F /* SocketConsultHelper+Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SocketConsultHelper+Chat.swift"; sourceTree = "<group>"; };
+		82064D622A87968200A8193F /* WaitingRoom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WaitingRoom.gif; sourceTree = "<group>"; };
 		8227ADD22A83426300BCCA81 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		8227ADD72A838F5100BCCA81 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		8227ADD92A83B3CA00BCCA81 /* ClientMessagingVC+ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientMessagingVC+ExtensionTableView.swift"; sourceTree = "<group>"; };
@@ -478,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				828579C62A7B7323003A3D5A /* SocketConsultHelper.swift */,
+				82064D602A87651B00A8193F /* SocketConsultHelper+Chat.swift */,
 				828579C72A7B7323003A3D5A /* SocketConsultHelper+Client+Extension.swift */,
 				828579C42A7B7323003A3D5A /* SocketConsultHelper+Lawyer+Extension.swift */,
 				828579C92A7B7323003A3D5A /* SocketHelper.swift */,
@@ -515,6 +520,8 @@
 			isa = PBXGroup;
 			children = (
 				82A294422A1B5D020064CEF4 /* Messaging.xcassets */,
+				8227AE062A850AD900BCCA81 /* Perqara.gif */,
+				82064D622A87968200A8193F /* WaitingRoom.gif */,
 				828F31AD2A81F37C0025F2FA /* Libary */,
 				828579D22A7B9CC1003A3D5A /* Router */,
 				828579C32A7B7217003A3D5A /* Helper */,
@@ -524,7 +531,6 @@
 				82A2943B2A1B5D010064CEF4 /* SceneDelegate.swift */,
 				82A2943D2A1B5D010064CEF4 /* ViewController.swift */,
 				82A294472A1B5D020064CEF4 /* Info.plist */,
-				8227AE062A850AD900BCCA81 /* Perqara.gif */,
 			);
 			path = TesterAbly;
 			sourceTree = "<group>";
@@ -603,6 +609,7 @@
 				82A294462A1B5D020064CEF4 /* LaunchScreen.storyboard in Resources */,
 				82857A012A7C0978003A3D5A /* ChatMessageFromMeTVCell.xib in Resources */,
 				82857A152A7CA104003A3D5A /* UIButtonView.xib in Resources */,
+				82064D632A87968200A8193F /* WaitingRoom.gif in Resources */,
 				82857A052A7C0986003A3D5A /* PresenceChatMessageTVCell.xib in Resources */,
 				82A294432A1B5D020064CEF4 /* Messaging.xcassets in Resources */,
 				82857A0D2A7C09A7003A3D5A /* AttachConfrimView.xib in Resources */,
@@ -654,6 +661,7 @@
 				82857A182A7CA1C6003A3D5A /* ServiceUrl.swift in Sources */,
 				8227ADF72A84EAF200BCCA81 /* LawyerMessagingVC+ExtensionProtocol.swift in Sources */,
 				82A2943E2A1B5D010064CEF4 /* ViewController.swift in Sources */,
+				82064D612A87651B00A8193F /* SocketConsultHelper+Chat.swift in Sources */,
 				8227ADF02A84E69400BCCA81 /* Alert.swift in Sources */,
 				8227ADF92A8507D500BCCA81 /* MessageReceiveFile.swift in Sources */,
 				828579CF2A7B7323003A3D5A /* SocketHelper.swift in Sources */,

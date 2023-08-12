@@ -17,19 +17,21 @@ class MessagingRouter {
   }
   
   func navigateToClientMessaging(payload: MessagingDataRouter) {
-    guard let viewcon = UIStoryboard(name:ClientMessagingVC.VCProperty.storyBoardName, bundle:nil).instantiateViewController(withIdentifier: ClientMessagingVC.VCProperty.identifierVC) as? ClientMessagingVC else {
+    guard let vc = UIStoryboard(name:ClientMessagingVC.VCProperty.storyBoardName, bundle:nil).instantiateViewController(withIdentifier: ClientMessagingVC.VCProperty.identifierVC) as? ClientMessagingVC else {
                    print("Could not instantiate view controller with identifier of type settingView")
                    return
     }
     
-    viewcon.roomKey = payload.roomKey ?? ""
-    viewcon.consultId = payload.consultationId ?? ""
-    viewcon.clientId = payload.clientId ?? ""
-    viewcon.lawyerID = payload.lawyerId ?? ""
+    vc.vm.roomKey = payload.roomKey ?? ""
+    vc.vm.consultId = payload.consultationId ?? ""
+    vc.vm.clientId = payload.clientId ?? ""
+    vc.vm.clientName = payload.clientName ?? "" 
+    vc.vm.lawyerID = payload.lawyerId ?? ""
+    vc.vm.lawyerName = payload.lawyerName ?? ""
      
     print("\(self.vc?.navigationController)")
     
-    self.vc?.navigationController?.pushViewController(viewcon, animated:true)
+    self.vc?.navigationController?.pushViewController(vc, animated:true)
   }
   
   func navigateToLawyerMessaging(payload: MessagingDataRouter) {
@@ -38,10 +40,12 @@ class MessagingRouter {
                    return
     }
     
-    vc.roomKey = payload.roomKey ?? ""
-    vc.consultId = payload.consultationId ?? ""
-    vc.clientId = payload.clientId ?? ""
-    vc.lawyerID = payload.lawyerId ?? ""
+    vc.vm.roomKey = payload.roomKey ?? ""
+    vc.vm.consultId = payload.consultationId ?? ""
+    vc.vm.clientId = payload.clientId ?? ""
+    vc.vm.clientName = payload.clientName ?? ""
+    vc.vm.lawyerID = payload.lawyerId ?? ""
+    vc.vm.lawyerName = payload.lawyerName ?? ""
     
     self.vc?.navigationController?.pushViewController(vc, animated:true)
   }
