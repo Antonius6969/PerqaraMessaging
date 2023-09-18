@@ -235,8 +235,8 @@
             filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "didReceiveChat()"
             landmarkType = "7">
          </BreakpointContent>
@@ -251,8 +251,8 @@
             filePath = "TesterAbly/Helper/SocketHelper/SocketConsultHelper+Chat.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "didReceiveChat()"
             landmarkType = "7">
          </BreakpointContent>

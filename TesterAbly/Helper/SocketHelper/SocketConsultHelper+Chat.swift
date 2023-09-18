@@ -32,6 +32,12 @@ extension SocketConsultHelper {
     })
   }
   
+  func socketChatHistory(){
+    self.socket.emitWithAck("CHAT:HISTORY").timingOut(after: 5, callback: { data in
+      print("ini send \(data)")
+    })
+  }
+  
 }
 
 //MARK :: [Krisna] socket Helper extension temporary for func Listener
